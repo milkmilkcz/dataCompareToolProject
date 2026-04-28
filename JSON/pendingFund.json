@@ -1,0 +1,41 @@
+{
+    "pendingFund": {
+        "correlateId": "string",
+        "createdBy": "SYSTEM",
+        "createdTime": "2020-08-10T17:30:00.000Z",
+        "documentState": 1,
+        "fundTransactionType": "COMMON",
+        "id": "string",
+        "jobScanStatus": "string",
+        "market": "string",
+        "needCallback": false,
+        "pendingFundItems": [
+            {
+                "allocatedDealingBasis": "UNIT",
+                "allocatedDealingNumber": 1.34,
+                "currency": "string",
+                "estimatedAmount": 1.34,
+                "fundAccountType": "FIXED_ACCOUNT",
+                "fundCode": "string",
+                "transactionAmount": 1.34
+            }
+        ],
+        "pendingFundStatus": "PENDING_DEAL",
+        "policyCurrency": "string",
+        "policyNum": "string",
+        "priceDetectCount": 0,
+        "priceDetectTimes": [],
+        "purchaseTypeEnum": "NORMAL",
+        "reason": "string",
+        "transactionAmount": 1.34,
+        "transactionId": "string",
+        "triggerDate": "2020-08-10T17:30:00.000Z",
+        "updatedBy": "SYSTEM",
+        "updatedTime": "2020-08-10T17:30:00.000Z",
+        "upstreamTransactionId": "string",
+        "userId": "string",
+        "username": "string",
+        "valuationDate": "2020-08-10T17:30:00.000Z",
+        "version": 0
+    }
+}

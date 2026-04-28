@@ -1,0 +1,25 @@
+{
+  "order": {
+    "id": "string",
+    "dateCreated": "2020-08-10T17:30:00.000Z",
+    "dateUpdated": "2020-08-10T17:30:00.000Z",
+    "items": [
+      {
+        "itemId": "string",
+        "applicationId": "string",
+        "applicationNum": "string",
+        "applicationLink": "string",
+        "currency": "string",
+        "price": 0
+      }
+    ],
+    "status": "string",
+    "paymentStatus": "string",
+    "currency": "string",
+    "market": "string",
+    "subTotal": 0,
+    "grandTotal": 0,
+    "currentVersion": 0,
+    "documentState": 1
+  }
+}

@@ -1,0 +1,200 @@
+{
+    "loan": {
+        "id": "string",
+        "market": "string",
+        "policyNum": "string",
+        "ghnwOverallLoan": {
+            "totalLoanInterest": 0,
+            "accTotalLoanInterest": 0,
+            "totalLoanDebt": 0,
+            "loanInterestCap": 0,
+            "loanAccountValue": 0,
+            "loanInterestCredit": 0,
+            "loanAccountPrincipal": 0,
+            "indexLoanPrincipal": 0,
+            "totalLoanPrincipal": 0,
+            "loanAlignPending": 0,
+            "accLoanInterestCreditYearly": 0,
+            "loanRate": 0,
+            "loanCreditRate": 0,
+            "lastUpdateDate": "2025-05-20T04:00:00.000Z"
+        },
+        "loanItemList": [
+            {
+                "type": "APL",
+                "businessType": "string",
+                "lastActivityDate": "2025-05-20T04:00:00.000Z",
+                "estimateLoanLapseDate": "2025-05-20T04:00:00.000Z",
+                "loanInterestType": "F",
+                "loanDetails": [
+                    {
+                        "loanSubtype": "STANDARD_LOAN",
+                        "status": "ACTIVE",
+                        "clearanceType": "PROACTIVE_REPAY",
+                        "clearanceResult": {
+                            "clearanceDate": "2025-05-20T04:00:00.000Z",
+                            "quotationDate": "2025-05-20T04:00:00.000Z",
+                            "quotationId": "string",
+                            "interestCutOffDate": "2025-05-20T04:00:00.000Z",
+                            "totalRepaidAmount": 0,
+                            "roundDownTotalInterest": 0,
+                            "clearanceTolerance": 0,
+                            "exactTotalInterest": 0
+                        },
+                        "loanUniqueId": "string",
+                        "lastLoanUniqueId": "string",
+                        "transactionId": "string",
+                        "loanDebt": 0,
+                        "principal": 0,
+                        "accrualInterest": 0,
+                        "capitalizeInterest": 0,
+                        "roundCapitalizedInterest": 0,
+                        "accrualInterestCarryForwardDetail": [
+                            {
+                                "carryForwardFlag": false,
+                                "interestStartDate": "2025-05-20T04:00:00.000Z",
+                                "interestEndDate": "2025-05-20T04:00:00.000Z",
+                                "createDate": "2025-05-20T04:00:00.000Z",
+                                "carryForwardReason": "LAPSE",
+                                "rateSnap": 0,
+                                "loanCreditRateSnap": 0,
+                                "carryForwardInterestValue": 0
+                            }
+                        ],
+                        "capitalizeInterestCarryOverDetail": [
+                            {
+                                "carryOverFlag": true,
+                                "carryOverReason": "LAPSE",
+                                "carryOverAmount": 0,
+                                "roundCarryOverAmount": 0,
+                                "carryOverStartDate": "2025-05-20T04:00:00.000Z",
+                                "carryOverEndDate": "2025-05-20T04:00:00.000Z",
+                                "createDate": "2025-05-20T04:00:00.000Z"
+                            }
+                        ],
+                        "repaymentDetail": [
+                            {
+                                "loanRepaymentCaseId": "string",
+                                "quoteDate": "2025-05-20T04:00:00.000Z",
+                                "loanSubtype": "STANDARD_LOAN",
+                                "loanRepaymentUniqueId": "string",
+                                "loanRepaymentAmount": 0,
+                                "clearanceType": "PROACTIVE_REPAY"
+                            }
+                        ],
+                        "loanEffectiveDate": "2025-05-20T04:00:00.000Z",
+                        "estimateLoanLapseDate": "2025-05-20T04:00:00.000Z",
+                        "finalRate": 0,
+                        "loanCreditRate": 0,
+                        "annualInterestRate": 0,
+                        "cbmRate": 0,
+                        "fixRate": true,
+                        "triggerDate": "2025-05-20T04:00:00.000Z",
+                        "interestHolidayStartDate": "2025-05-20T04:00:00.000Z",
+                        "interestHolidayEndDate": "2025-05-20T04:00:00.000Z",
+                        "interestHolidayDurationDay": 0,
+                        "cashValueSnapshot": 0,
+                        "loanPremiumStartDate": "2025-05-20T04:00:00.000Z",
+                        "loanPremiumEndDate": "2025-05-20T04:00:00.000Z",
+                        "premiumModel": "string",
+                        "lastCarryForwardEndDate": "2025-05-20T04:00:00.000Z",
+                        "lastCarryOverEndDate": "2025-05-20T04:00:00.000Z",
+                        "freezeDate": "2025-05-20T04:00:00.000Z"
+                    }
+                ]
+            }
+        ],
+        "historyLoanItemList": [
+            {
+                "createDate": "2025-05-20T04:00:00.000Z",
+                "updateDate": "2025-05-20T04:00:00.000Z",
+                "reason": "PROACTIVELY_REPAYMENT",
+                "type": "APL",
+                "businessType": "string",
+                "lastActivityDate": "2025-05-20T04:00:00.000Z",
+                "estimateLoanLapseDate": "2025-05-20T04:00:00.000Z",
+                "loanInterestType": "F",
+                "loanDetails": [
+                    {
+                        "loanSubtype": "STANDARD_LOAN",
+                        "status": "ACTIVE",
+                        "clearanceType": "PROACTIVE_REPAY",
+                        "clearanceResult": {
+                            "clearanceDate": "2025-05-20T04:00:00.000Z",
+                            "quotationDate": "2025-05-20T04:00:00.000Z",
+                            "quotationId": "string",
+                            "interestCutOffDate": "2025-05-20T04:00:00.000Z",
+                            "totalRepaidAmount": 0,
+                            "roundDownTotalInterest": 0,
+                            "clearanceTolerance": 0,
+                            "exactTotalInterest": 0
+                        },
+                        "loanUniqueId": "string",
+                        "lastLoanUniqueId": "string",
+                        "transactionId": "string",
+                        "loanDebt": 0,
+                        "principal": 0,
+                        "accrualInterest": 0,
+                        "capitalizeInterest": 0,
+                        "roundCapitalizedInterest": 0,
+                        "accrualInterestCarryForwardDetail": [
+                            {
+                                "carryForwardFlag": false,
+                                "interestStartDate": "2025-05-20T04:00:00.000Z",
+                                "interestEndDate": "2025-05-20T04:00:00.000Z",
+                                "createDate": "2025-05-20T04:00:00.000Z",
+                                "carryForwardReason": "LAPSE",
+                                "rateSnap": 0,
+                                "loanCreditRateSnap": 0,
+                                "carryForwardInterestValue": 0
+                            }
+                        ],
+                        "capitalizeInterestCarryOverDetail": [
+                            {
+                                "carryOverFlag": true,
+                                "carryOverReason": "LAPSE",
+                                "carryOverAmount": 0,
+                                "roundCarryOverAmount": 0,
+                                "carryOverStartDate": "2025-05-20T04:00:00.000Z",
+                                "carryOverEndDate": "2025-05-20T04:00:00.000Z",
+                                "createDate": "2025-05-20T04:00:00.000Z"
+                            }
+                        ],
+                        "repaymentDetail": [
+                            {
+                                "loanRepaymentCaseId": "string",
+                                "quoteDate": "2025-05-20T04:00:00.000Z",
+                                "loanSubtype": "STANDARD_LOAN",
+                                "loanRepaymentUniqueId": "string",
+                                "loanRepaymentAmount": 0,
+                                "clearanceType": "PROACTIVE_REPAY"
+                            }
+                        ],
+                        "loanEffectiveDate": "2025-05-20T04:00:00.000Z",
+                        "estimateLoanLapseDate": "2025-05-20T04:00:00.000Z",
+                        "finalRate": 0,
+                        "loanCreditRate": 0,
+                        "annualInterestRate": 0,
+                        "cbmRate": 0,
+                        "fixRate": true,
+                        "triggerDate": "2025-05-20T04:00:00.000Z",
+                        "interestHolidayStartDate": "2025-05-20T04:00:00.000Z",
+                        "interestHolidayEndDate": "2025-05-20T04:00:00.000Z",
+                        "interestHolidayDurationDay": 0,
+                        "cashValueSnapshot": 0,
+                        "loanPremiumStartDate": "2025-05-20T04:00:00.000Z",
+                        "loanPremiumEndDate": "2025-05-20T04:00:00.000Z",
+                        "premiumModel": "string",
+                        "lastCarryForwardEndDate": "2025-05-20T04:00:00.000Z",
+                        "lastCarryOverEndDate": "2025-05-20T04:00:00.000Z",
+                        "freezeDate": "2025-05-20T04:00:00.000Z"
+                    }
+                ]
+            }
+        ],
+        "currentVersion": 0,
+        "createDate": "2025-05-20T04:00:00.000Z",
+        "updateDate": "2025-05-20T04:00:00.000Z",
+        "documentState": 1
+    }
+}

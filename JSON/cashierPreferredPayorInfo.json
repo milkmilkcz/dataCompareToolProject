@@ -1,0 +1,36 @@
+{
+  "cashierPreferredPayorInfo": {
+    "id": "string",
+    "payorOcdmId": "string",
+    "agreementNum": "string",
+    "market": "string",
+    "caseId": "string",
+    "payorType": "string",
+    "userName": "string",
+    "idType": "string",
+    "idNo": "string",
+    "email": "string",
+    "phoneNum": "string",
+    "preferredPayor": false,
+    "address": "string",
+    "lastModifiedDateTime": "2020-08-10T17:30:00.000Z",
+    "preferredHistory": [
+      {
+        "payorOcdmId": "string",
+        "caseId": "string",
+        "payorType": "string",
+        "userName": "string",
+        "idType": "string",
+        "idNo": "string",
+        "email": "string",
+        "phoneNum": "string",
+        "preferredPayor": false,
+        "address": "string",
+        "createdDateTime": "2020-08-10T17:30:00.000Z"
+      }
+    ],
+    "offsetTimeZone": "string",
+    "version": 0,
+    "documentState": 1
+  }
+}

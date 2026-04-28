@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include requirements.txt
+include .env.example
+include Jenkinsfile
+recursive-include docs *.md
+recursive-include config *.txt *.example
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__

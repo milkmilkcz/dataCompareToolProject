@@ -1,0 +1,27 @@
+{
+  "monthiversarySummary": {
+    "id": "string",
+    "market": "string",
+    "agreementNum": "string",
+    "policyMonthCount": 0,
+    "createDateTime": "2020-08-10T17:30:00.000Z",
+	"mvyActionDate": "2020-08-10T17:30:00.000Z",
+    "originalFaceAmount": 0,
+    "revisedFaceAmount": 0,
+    "monthiversaryComponents": [
+      {
+        "planCode": "string",
+        "originalFaceAmount": 0,
+        "revisedFaceAmount": 0
+      }
+    ],
+    "lapseTestComponent": {
+      "pvTest": true,
+      "cvTest": true,
+      "nlgTest": true,
+      "surrenderCharge": 0
+    },
+    "currentVersion": 0,
+    "documentState": 1
+  }
+}

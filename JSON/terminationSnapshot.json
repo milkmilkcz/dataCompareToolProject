@@ -1,0 +1,134 @@
+{
+  "terminationSnapshot": {
+    "market": "string",
+    "policyNum": "string",
+    "caseId": "string",
+    "caseNumber": "string",
+    "terminationApplicationInfo": {
+      "terminationEffectiveDate": "2025-05-20T04:00:00.000Z",
+      "terminationType": "string",
+      "terminationReason": "string",
+      "policyValue": 0,
+      "policyValueCGPV": 0,
+      "enhancedCashValueAmount": 0,
+      "totalSuspense": 0,
+      "paymentSuspense": 0,
+      "surrenderCharge": 0,
+      "surrenderValue": 0,
+      "totalLoanBalance": 0,
+      "totalPremiumPaid": 0,
+      "netSurrenderValue": 0,
+      "writeOffValue": 0,
+      "upperWriteOffValue": 0,
+      "currency": "string",
+      "status": "string",
+      "updateBy": "string",
+      "updatedTime": "2025-05-20T04:00:00.000Z",
+      "operatorOcdmId": "string",
+      "terminationSurrenderType": "NOT_TAKEN",
+      "changedItem": "string"
+    },
+    "terminationSnapshotStatus": "INITIALED",
+    "terminationCaseSourceEnum": "SF_NEW_CASE",
+    "snapshotHistory": [
+      {
+        "terminationEffectiveDate": "2025-05-20T04:00:00.000Z",
+        "terminationType": "string",
+        "terminationReason": "string",
+        "policyValue": 0,
+        "policyValueCGPV": 0,
+        "enhancedCashValueAmount": 0,
+	"totalSuspense": 0,
+	"paymentSuspense": 0,
+        "surrenderCharge": 0,
+        "surrenderValue": 0,
+        "totalLoanBalance": 0,
+        "totalPremiumPaid": 0,
+        "netSurrenderValue": 0,
+        "writeOffValue": 0,
+        "upperWriteOffValue": 0,
+        "currency": "string",
+        "status": "string",
+        "updateBy": "string",
+        "updatedTime": "2025-05-20T04:00:00.000Z",
+        "operatorOcdmId": "string",
+        "terminationSurrenderType": "NOT_TAKEN",
+        "changedItem": "string"
+      }
+    ],
+    "completeReviewRequestSnapshot": {
+      "market": "string",
+      "agreementNum": "string",
+      "caseId": "string",
+      "caseNum": "string",
+      "requestType": "GHNW_ANGULAR_POLICY_TERMINATION",
+      "refundMethod": "string",
+      "refundAccountNum": "string",
+      "refundRecipientName": "string",
+      "bankPartner": "string",
+      "terminationEffectiveDate": "2025-05-20T04:00:00.000Z",
+      "angularSubmitVo": {
+        "terminationEffectiveDate": "2025-05-20T04:00:00.000Z",
+        "terminationType": "string",
+        "terminationReason": "string",
+        "policyValue": 0,
+        "policyValueCGPV": 0,
+        "paymentSuspense": 0,
+        "enhancedCashValueAmount": 0,
+        "totalSuspense": 0,
+        "surrenderCharge": 0,
+        "surrenderValue": 0,
+        "totalLoanBalance": 0,
+        "totalPremiumPaid": 0,
+        "netSurrenderValue": 0,
+        "currency": "string",
+        "status": "string",
+        "updateBy": "string",
+        "operatorOcdmId": "string",
+        "surrenderType": "NOT_TAKEN"
+      },
+      "userId": "string",
+      "username": "string",
+      "accountingDetail": [
+        {
+          "accountingType": "string",
+          "policyMonth": 0,
+          "fundAccountingRecord": [
+            {
+              "fundCode": "string",
+              "value": 0
+            }
+          ],
+          "totalValue": 0
+        }
+      ],
+      "initialBusinessType": "string"
+    },
+    "refundMethod": "string",
+    "explicitFreelookStatus": "string",
+    "refundAccountNum": "string",
+    "refundRecipientName": "string",
+    "username": "string",
+    "accountingDetail": [
+      {
+        "accountingType": "string",
+        "policyMonth": 0,
+        "fundAccountingRecord": [
+          {
+            "fundCode": "string",
+            "value": 0
+          }
+        ],
+        "totalValue": 0
+      }
+    ],
+    "initialBusinessType": "string",
+    "id": "string",
+    "createdBy": "SYSTEM",
+    "createdTime": "2025-05-20T04:00:00.000Z",
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2025-05-20T04:00:00.000Z",
+    "version": 0,
+    "documentState": 1
+  }
+}

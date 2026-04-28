@@ -1,0 +1,77 @@
+{
+    "premiumFundAllocationInst": {
+        "accountAllocates": [
+            {
+                "accountAllocationPercentage": 1.34,
+                "accountType": "string",
+                "allocationDetails": [
+                    {
+                        "allocationEffectiveDate": "2020-08-10T17:30:00.000Z",
+                        "allocationStatus": "string",
+                        "allocationType": "string",
+                        "autoRebalanceCancellationDate": "2020-08-10T17:30:00.000Z",
+                        "autoRebalancingFrequency": 1.34,
+                        "autoRebalancingType": "string",
+                        "fundAllocationPercentage": 1.34,
+                        "fundCode": "string",
+                        "fundLayers": [
+                            {
+                                "adjustSegmentBalance": 1.34,
+                                "allocation": 1.34,
+                                "averageFundValueRatio": 1.34,
+                                "beforeLastMvyDbpFundBalance": 1.34,
+                                "beforeLastMvyFundBalance": 1.34,
+                                "correlateId": "string",
+                                "createdDate": "2020-08-10T17:30:00.000Z",
+                                "currencyCode": "string",
+                                "dbpFundBalance": 1.34,
+                                "endDate": "2020-08-10T17:30:00.000Z",
+                                "fundBalance": 1.34,
+                                "guaranteeInterestOnFundBalance": "string",
+                                "guaranteedFirstYearInterestRate": 1.34,
+                                "interest": 1.34,
+                                "isHolding": false,
+                                "lastFundDividendDeclaredDate": "2020-08-10T17:30:00.000Z",
+                                "lastFundDividendProcessDate": "2020-08-10T17:30:00.000Z",
+                                "lastFundMovementDate": "2020-08-10T17:30:00.000Z",
+                                "lastInterestDate": "2020-08-10T17:30:00.000Z",
+                                "lastMvyActivityDate": "2020-08-10T17:30:00.000Z",
+                                "layerStatus": "string",
+                                "month": 2,
+                                "premiumGroup": "string",
+                                "purchaseFundAmount": 1.34,
+                                "purchasedUnitNumber": 1.34,
+                                "startDate": "2020-08-10T17:30:00.000Z",
+                                "totalPurchaseAmount": 1.34,
+                                "unitBalance": 1.34,
+                                "withdrawalFundAmount": 1.34,
+                                "withdrawalUnitNumber": 1.34,
+                                "year": 2
+                            }
+                        ],
+                        "fundName": "string",
+                        "gainLossAmount": 1.34,
+                        "lastTransactionDate": "2020-08-10T17:30:00.000Z",
+                        "lastTransactionRefNumber": "string",
+                        "premiumGroup": "string"
+                    }
+                ]
+            }
+        ],
+        "basePlanCode": "string",
+        "correlateId": "string",
+        "createdBy": "SYSTEM",
+        "createdTime": "2020-08-10T17:30:00.000Z",
+        "currencyCode": "string",
+        "documentState": 1,
+        "id": "string",
+        "insuranceProductType": "TERM_LIFE",
+        "market": "string",
+        "policyNum": "string",
+        "premiumAmount": 1.34,
+        "triggerDate": "2020-08-10T17:30:00.000Z",
+        "updatedBy": "SYSTEM",
+        "updatedTime": "2020-08-10T17:30:00.000Z",
+        "version": 0
+    }
+}

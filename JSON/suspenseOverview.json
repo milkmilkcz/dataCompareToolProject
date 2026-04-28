@@ -1,0 +1,111 @@
+{
+  "suspenseOverview": {
+    "id": "string",
+    "tradeNum": "string",
+    "agreementNum": "string",
+    "suspenseAmount": 0,
+    "currency": "string",
+    "market": "string",
+    "currentVersion": 0,
+    "suspenseDetails": [
+      {
+        "tradeNum": "string",
+        "agreementNum": "string",
+        "caseId": "string",
+        "suspenseAmount": 0,
+        "currency": "string",
+        "paymentMethod": "string",
+        "orderId": "string",
+        "bankPartner": "string",
+        "market": "string",
+        "transactionID": "string",
+        "suspenseUsage": "PREMIUM_APPLY",
+        "suspenseType": "PREMIUM_APPLY",
+        "requestContent": "string",
+        "requestSource": "string",
+        "sourceChannel": "string",
+        "targetChannel": "string",
+        "premiumType": "string",
+        "businessEvent": "string",
+        "currentSuspenseAmount": 0,
+        "suspenseDate": "2020-08-10T17:30:00.000Z",
+        "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+      }
+    ],
+    "suspenseAccounts": [
+      {
+        "tradeNum": "string",
+        "agreementNum": "string",
+        "suspenseAmount": 0,
+        "currency": "string",
+        "market": "string",
+        "accountType": "paymentSuspenseAccount",
+        "suspenseDetails": [
+          {
+            "tradeNum": "string",
+            "agreementNum": "string",
+            "caseId": "string",
+            "suspenseAmount": 0,
+            "currency": "string",
+            "paymentMethod": "string",
+            "orderId": "string",
+            "bankPartner": "string",
+            "market": "string",
+            "transactionID": "string",
+            "suspenseUsage": "PREMIUM_APPLY",
+            "suspenseType": "PREMIUM_APPLY",
+            "requestContent": "string",
+            "requestSource": "string",
+            "sourceChannel": "string",
+            "targetChannel": "string",
+            "premiumType": "string",
+            "businessEvent": "string",
+            "currentSuspenseAmount": 0,
+            "suspenseDate": "2020-08-10T17:30:00.000Z",
+            "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+          }
+        ],
+        "lastUpdatedDate": "2020-08-10T17:30:00.000Z",
+        "subAccountList": [
+          {
+            "tradeNum": "string",
+            "agreementNum": "string",
+            "suspenseAmount": 0,
+            "currency": "string",
+            "market": "string",
+            "accountType": "premiumCollectionAccount",
+            "suspenseDetails": [
+              {
+                "tradeNum": "string",
+                "agreementNum": "string",
+                "caseId": "string",
+                "suspenseAmount": 0,
+                "currency": "string",
+                "paymentMethod": "string",
+                "orderId": "string",
+                "bankPartner": "string",
+                "market": "string",
+                "transactionID": "string",
+                "suspenseUsage": "PREMIUM_APPLY",
+                "suspenseType": "PREMIUM_APPLY",
+                "requestContent": "string",
+                "requestSource": "string",
+                "sourceChannel": "string",
+                "targetChannel": "string",
+                "premiumType": "string",
+                "businessEvent": "string",
+                "currentSuspenseAmount": 0,
+                "suspenseDate": "2020-08-10T17:30:00.000Z",
+                "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+              }
+            ],
+            "lastUpdatedDate": "2020-08-10T17:30:00.000Z",
+            "subAccountList": []
+          }
+        ]
+      }
+    ],
+    "latestOperator": "string",
+    "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+  }
+}

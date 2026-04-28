@@ -1,0 +1,872 @@
+{
+    "application": {
+        "id": "string",
+        "applicationNum": "string",
+        "uwStatus": "CLEAN_CASE",
+        "status": "PENDING",
+        "market": "string",
+        "language": "string",
+        "requestId": "string",
+        "requestorContact": "string",
+        "ocdmId": "string",
+        "orderId": "string",
+        "orderIds": [
+            "string"
+        ],
+        "currentVersion": 0,
+        "individuals": [
+            {
+                "individualIndex": "string",
+                "recordId": "string",
+                "customerNumber": "string",
+                "age": 0,
+                "bloodType": "string",
+                "birthPlace": {
+                    "country": "string",
+                    "province": "string",
+                    "city": "string"
+                },
+                "citizenship": "string",
+                "company": "string",
+                "contactRank": "string",
+                "contactRole": "string",
+                "description": "string",
+                "ethnicity": "string",
+                "externalId": "string",
+                "FATCAIndicator": true,
+                "FATCALastUpdateDateTime": "2020-08-10T17:30:00.000Z",
+                "firstName": "string",
+                "gender": "string",
+                "height": 0,
+                "heightUnit": 0,
+                "heightUnitValue": "string",
+                "highestEducation": "string",
+                "integrationKey": "string",
+                "beneficiaryOtherOcdmID": "string",
+                "jobTitle": "string",
+                "lastName": "string",
+                "latestSalaryRange": "string",
+                "salaryCurrency": "string",
+                "latestSurveyResponseDate": "2020-08-10T17:30:00.000Z",
+                "latestSurveySentDate": "2020-08-10T17:30:00.000Z",
+                "maritalStatus": "string",
+                "middleName": "string",
+                "name": "string",
+                "nationality": "string",
+                "occupation": "string",
+                "occupationClass": "string",
+                "occupationDescription": "string",
+                "occupationQuestion": "string",
+                "occupationAnswer": "string",
+                "personAssistantName": "string",
+                "personAssistantPhone": "string",
+                "personBirthdate": "2020-08-10T17:30:00.000Z",
+                "personDepartment": "string",
+                "personDoNotCall": true,
+                "personEmail": "string",
+                "personHasOptedOutOfEmail": true,
+                "personHasOptedOutOfFax": true,
+                "personHomePhone": "string",
+                "personLeadSource": "string",
+                "personTitle": "string",
+                "phone": "string",
+                "photoUrl": "string",
+                "previousNPS": 0,
+                "primaryLanguage": "string",
+                "recordTypeName": "string",
+                "religion": "string",
+                "residency": "string",
+                "revisedNPS": 0,
+                "salutation": "string",
+                "sourceSystem": "string",
+                "status": "string",
+                "weight": 0,
+                "weightUnit": 0,
+                "weightUnitValue": "string",
+                "leadId": "string",
+                "marketingSourceId": "string",
+                "accountNames": [
+                    {
+                        "name": "string",
+                        "accountNameType": "string",
+                        "externalID": "string",
+                        "description": "string",
+                        "effectivePeriodEndDateTime": "2020-08-10T17:30:00.000Z",
+                        "effectivePeriodStartDateTime": "2020-08-10T17:30:00.000Z",
+                        "fullName": "string",
+                        "middleName": "string",
+                        "integrationKey": "string",
+                        "sourceSystem": "string",
+                        "defaultIndicator": "string",
+                        "firstName": "string",
+                        "language": "string",
+                        "lastName": "string",
+                        "prefix": "string",
+                        "salutation": "string",
+                        "suffix": "string",
+                        "usageType": "string"
+                    }
+                ],
+                "accountRegistrations": [
+                    {
+                        "accountId": "string",
+                        "registrationType": "membership-Registration",
+                        "registrationSubType": "clubMember",
+                        "status": "active",
+                        "name": "string",
+                        "description": "string",
+                        "registrant": "string",
+                        "registrationAccountId": "string",
+                        "includedInRegistration": "string",
+                        "issuedPlaceId": "string",
+                        "disqualifiedDateTime": "string",
+                        "disqualifiedReason": "string",
+                        "lastUsedDateTime": "2020-08-10T17:30:00.000Z",
+                        "lastVerifiedDateTime": "2020-08-10T17:30:00.000Z",
+                        "isCompletionLicense": "string",
+                        "isRenewalIntention": "string",
+                        "role": "string",
+                        "commercialEndorsement": "string",
+                        "drivingPointsCount": 0,
+                        "vehicleClass": "string",
+                        "subjectArea": "string",
+                        "grade": "string",
+                        "level": "string",
+                        "identifier": "string",
+                        "laserNumber": "string",
+                        "idType": "permanent",
+                        "registeredBirthDateTime": "2020-08-10T17:30:00.000Z",
+                        "registeredDeathDateTime": "2020-08-10T17:30:00.000Z",
+                        "taxonomy": "string",
+                        "membershipFee": "string",
+                        "effectivePeriodStartDate": "2020-08-10T17:30:00.000Z",
+                        "effectivePeriodEndDate": "2020-08-10T17:30:00.000Z",
+                        "recordTypeId": "string",
+                        "sourceSystem": "string",
+                        "integrationKey": "string"
+                    }
+                ],
+                "accountFinancialAccounts": [
+                    {
+                        "recordId": "string",
+                        "financialInstituteAccountRecordId": "string",
+                        "financialInstituteAccountAccountName": "string",
+                        "financialInstituteAccountAccountRecordTypeName": "string",
+                        "placeRecordId": "string",
+                        "placeCountry": "string",
+                        "placeCountryCode": "string",
+                        "placeDescription": "string",
+                        "placeExtendedISOCode": "string",
+                        "placeAbbreviation": "string",
+                        "placeName": "string",
+                        "placeType": "string",
+                        "placePhoneCountryCode": "string",
+                        "placePostCode": "string",
+                        "placeState": "string",
+                        "placeStateCode": "string",
+                        "bankBranchCode": "string",
+                        "bankBranchName": "string",
+                        "bankName": "string",
+                        "bankCode": "string",
+                        "bankPlaceRecordID": "string",
+                        "bankPlaceCountry": "string",
+                        "bankPlaceCountryCode": "string",
+                        "bankPlaceDescription": "string",
+                        "bankPlaceExtendedISOCode": "string",
+                        "bankPlaceAbbreviation": "string",
+                        "bankPlaceName": "string",
+                        "bankPlaceType": "string",
+                        "bankPlacePhoneCountryCode": "string",
+                        "bankPlacePostCode": "string",
+                        "bankPlaceState": "string",
+                        "bankPlaceStateCode": "string",
+                        "financialAccountType": "string",
+                        "identifier": "string",
+                        "creditCardToken": "string",
+                        "name": "string",
+                        "status": "pending",
+                        "effectivePeriodEndDateTime": "2020-08-10T17:30:00.000Z",
+                        "effectivePeriodStartDateTime": "2020-08-10T17:30:00.000Z",
+                        "externalID": "string",
+                        "sourceSystem": "string",
+                        "integrationKey": "string"
+                    }
+                ],
+                "contactMethods": [
+                    {
+                        "accountId": "string",
+                        "contactId": "string",
+                        "placeId": "string",
+                        "districtId": "string",
+                        "name": "string",
+                        "contactMethodType": "address",
+                        "contactMethodSubType": "string",
+                        "contactUsage": "string",
+                        "isUsedForPromotion": true,
+                        "isUsedForSuggestion": true,
+                        "isUsedForNews": true,
+                        "isUsedForForm": true,
+                        "preferencePriority": "string",
+                        "language": "string",
+                        "status": "string",
+                        "contactInstructions": "string",
+                        "isRedList": true,
+                        "isSolicitable": true,
+                        "phoneCountryCode": "string",
+                        "phoneAreaCode": "string",
+                        "phoneNumber": "string",
+                        "phoneExtension": "string",
+                        "addressLine1": "string",
+                        "addressLine2": "string",
+                        "addressLine3": "string",
+                        "district": "string",
+                        "region": "string",
+                        "state": "string",
+                        "country": "string",
+                        "postCode": "string",
+                        "postmanBeat": "string",
+                        "addressCode": "string",
+                        "email": "string",
+                        "url": "string",
+                        "answerBack": "string",
+                        "lastValidatedDateTime": "2020-08-10T17:30:00.000Z",
+                        "validationResult": "valid",
+                        "availablePeriodStartDateTime": "2020-08-10T17:30:00.000Z",
+                        "availablePeriodEndDateTime": "2020-08-10T17:30:00.000Z",
+                        "recordTypeId": "string",
+                        "externalId": "string",
+                        "sourceSystem": "string",
+                        "integrationKey": "string",
+                        "contactPurposePreference": {
+                            "contactPurposePreferenceRecordId": "string",
+                            "availablePeriodEndDateTime": "string",
+                            "availablePeriodStartDateTime": "string",
+                            "company": "string",
+                            "contactMethodType": "address",
+                            "contactPurpose": "billing",
+                            "name": "string",
+                            "contactRole": "string",
+                            "description": "string"
+                        }
+                    }
+                ],
+                "substanceUses": [
+                    {
+                        "substanceUseId": "string",
+                        "accountId": "string",
+                        "name": "string",
+                        "substanceUseType": "string",
+                        "substanceUseSubType": "string",
+                        "type": "SMOKING_HABBIT",
+                        "status": "string",
+                        "amount": 0,
+                        "amountUnit": "string",
+                        "duration": 0,
+                        "durationUnit": "string",
+                        "frequency": "string",
+                        "lastOccurenceDateTime": "2020-08-10T17:30:00.000Z",
+                        "motive": "string",
+                        "recordTypeId": "string"
+                    }
+                ],
+                "lifestyles": [
+                    {
+                        "lifestyleId": "string",
+                        "accountId": "string",
+                        "description": "string",
+                        "frequency": "string",
+                        "lastOccurenceDateTime": "2020-08-10T17:30:00.000Z",
+                        "lifestyleExperienceType": "string",
+                        "motive": "string",
+                        "name": "string",
+                        "timeSpendDuration": 0,
+                        "timeSpendDurationUnit": "string",
+                        "recordTypeId": "string"
+                    }
+                ],
+                "sourceOfFunds": [
+                    "string"
+                ],
+                "otherSourceOfFunds": [
+                    "string"
+                ],
+                "similarCustomers": [
+                    {
+                        "ocdmId": "string",
+                        "misMatchField": "string",
+                        "similarCustomerInfo": {
+                            "firstName": "string",
+                            "lastName": "string",
+                            "name": "string",
+                            "gender": "string",
+                            "identifier": "string",
+                            "personBirthDate": "string",
+                            "updateDateSnapshot": "2020-08-10T17:30:00.000Z",
+                            "createDateSnapshot": "2020-08-10T17:30:00.000Z",
+                            "queryDate": "2020-08-10T17:30:00.000Z"
+                        }
+                    }
+                ],
+                "fatherFirstName": "string",
+                "fatherLastName": "string",
+                "financialInstitution": "string",
+                "accountCountry": "string",
+                "bankApproved": "string",
+                "nearestAge": 0
+            }
+        ],
+        "documents": [
+            {
+                "documentType": "string",
+                "documentId": "string",
+                "fileFormat": "string",
+                "purpose": "string",
+                "documentLink": "string",
+                "name": "string",
+                "individualIndex": 0,
+                "documentIndex": 0,
+                "docDate": "2020-08-10T17:30:00.000Z",
+                "ocdmId": "string",
+                "storeType": "Alfresco",
+                "docDescription": "string",
+                "docStatus": "string",
+                "docCategory": "OUTSTANDING",
+                "docCreatedDate": "2020-08-10T17:30:00.000Z",
+                "docReceivedDate": "2020-08-10T17:30:00.000Z",
+                "docFollowupDate": "2020-08-10T17:30:00.000Z",
+                "docComment": "string"
+            }
+        ],
+        "agreementNum": "string",
+        "effectiveDate": "2020-08-10T17:30:00.000Z",
+        "revisedEffectiveDate": "2020-08-10T17:30:00.000Z",
+        "createDate": "2020-08-10T17:30:00.000Z",
+        "lastUpdateDate": "2020-08-10T17:30:00.000Z",
+        "benefitComponents": [
+            {
+                "status": "PENDING",
+                "benefitCode": "string",
+                "benefitType": "string",
+                "benefitAmount": 0,
+                "totalDeathBenefit": 0,
+                "originalBenefitPremium": {
+                    "annual": 0,
+                    "semiAnnual": 0,
+                    "quarter": 0,
+                    "month": 0,
+                    "targetCommissionablePremium": 0
+                },
+                "benefitPremium": {
+                    "modalType": "Bi-Annual",
+                    "amount": 0
+                },
+                "benefitDiscount": {
+                    "modalType": "Bi-Annual",
+                    "amount": 0
+                },
+                "planPremiumDetail": {
+                    "modalPremium": 0,
+                    "discount": 0,
+                    "basicPremium": 0,
+                    "extraPremium": 0,
+                    "premiumWithLoading": 0,
+                    "discountedPremium": 0,
+                    "annualPremium": 0
+                },
+                "benefitEffectiveStartDate": "2020-08-10T17:30:00.000Z",
+                "benefitEffectiveEndDate": "2020-08-10T17:30:00.000Z",
+                "benefitSignUpDate": "2020-08-10T17:30:00.000Z",
+                "maturityDate": "2020-08-10T17:30:00.000Z",
+                "benefitMaxAge": 0,
+                "benefitPeriodIndicator": "string",
+                "minBenefitPeriod": 0,
+                "minPremiumPaidPeriod": 0,
+                "maxPremiumPaidAge": 0,
+                "currency": "string",
+                "modalFactor": 0,
+                "productId": "string",
+                "productMarketPlanName": "string",
+                "productLink": "string",
+                "agreementYearDate": "string",
+                "agreementExcludeSOS": true,
+                "language": "string",
+                "channel": "string",
+                "benefitFeatures": [
+                    {
+                        "benefitFeatureName": "string",
+                        "subBenefitFeatureName": "string",
+                        "value": "string"
+                    }
+                ],
+                "reinsurer": "string",
+                "agreementAccountRoleIndividuals": [
+                    {
+                        "individualURL": "string",
+                        "individualIndex": "string",
+                        "agreementAccountRoles": [
+                            {
+                                "agreementAccountRoleId": "string",
+                                "accountId": "string",
+                                "agreementId": "string",
+                                "name": "string",
+                                "isPrimary": "string",
+                                "status": "string",
+                                "role": "portfolio-owner",
+                                "rolePercentage": 0,
+                                "relationshipToInsured": "self",
+                                "startDate": "2020-08-10T17:30:00.000Z",
+                                "endDate": "2020-08-10T17:30:00.000Z",
+                                "recordTypeId": "string",
+                                "accountType": "Individual",
+                                "accountRoleType": "Individual",
+                                "parentId": "string",
+                                "otherRelationToInsured": "string",
+                                "financialInstitution": "string",
+                                "accountCountry": "string",
+                                "bankApproved": "string",
+                                "priorityType": "string",
+                                "ownershipJurisdiction":"string"
+                            }
+                        ]
+                    }
+                ],
+                "agreementContactMethodIndividuals": [
+                    {
+                        "policyContactPurpose": "billing",
+                        "name": "string",
+                        "recordId": "string",
+                        "agreementContactMethodIndividual": "string"
+                    }
+                ],
+                "exclusionCode": "string",
+                "exclusionEndYear": "string",
+                "exclusionRemark": "string",
+                "benefitVersion": "string",
+                "commissionAppliedMethod": "string",
+                "commissionRateVersion": "string",
+                "deathBenefitOption": "LEVEL",
+                "policyTerm": "string",
+                "interestRate": 0,
+                "interestRateType": "string",
+                "loanType": "string",
+                "plannedPremium": 0,
+                "annualPremium": 0,
+                "initialAmount": 0,
+                "initialSalesAmount": 0,
+                "minInitialPremium": 0,
+                "percentage": 0,
+                "appliedAmount": 0,
+                "productType": "string",
+                "productVersion": "string",
+                "faceAmountCurrency": "string",
+                "decision": "string",
+                "category": "string",
+                "policyReplacement": "string",
+                "replacementPolicyNumber": "string",
+                "otherCarriersToFac": true,
+                "riderAmount": 0,
+                "riderPercentage": 0,
+                "riderDecision": "string",
+                "estimatedApe": 0,
+                "illustrationAge": 0,
+                "estimatedNbv": 0,
+                "totalPremiumAmount": 0,
+                "quotedPremiumAmount": 0,
+                "lumpSum": 0,
+                "premiumTransactionAmount": 0,
+                "coverageId":"string",
+                "expireRule":"string",
+                "expireDateRule":"string",
+                "expireAge": 0,
+                "expireDuration":"string"
+            }
+        ],
+        "specialComponents": [
+            {
+                "id": "string",
+                "type": "INTERIM_COVER",
+                "code": "string",
+                "effectiveStartDate": "2020-08-10T17:30:00.000Z",
+                "effectiveEndDate": "2020-08-10T17:30:00.000Z",
+                "docId": "string",
+                "docCreateDate": "2020-08-10T17:30:00.000Z",
+                "claimDate": "2020-08-10T17:30:00.000Z"
+            }
+        ],
+        "selectedModal": "Bi-Annual",
+        "contactPreference": "string",
+        "expiryDateTime": "2025-05-20T04:00:00.000Z",
+        "listProcessingStatus": [
+            {
+                "id": "string",
+                "source": "string",
+                "status": true,
+                "override": true,
+                "fldValue": {
+                    "employerName": "string",
+                    "occupationAndTitle": "string",
+                    "industry": "string",
+                    "sourceOfWealth": "string",
+                    "identity": "string",
+                    "royalFamily": true,
+                    "pepIdentifiedDate": "2020-08-10T17:30:00.000Z",
+                    "pepName": "string",
+                    "pepPosition": "string",
+                    "pepPositionDate": "2020-08-10T17:30:00.000Z",
+                    "rcaRelationshipToPep": "string",
+                    "pepOfficeCountry": "string",
+                    "hierarchyRelationship": "string",
+                    "citizenship": "string"
+                },
+                "lastUpdateDate": "2020-08-10T17:30:00.000Z"
+            }
+        ],
+        "statementsAndResponses": [
+            {
+                "statement": "tax-consent",
+                "type": "declaration",
+                "response": "accepted",
+                "individualURL": "string",
+                "originalQuestion": "string",
+                "originalAnswer": "string",
+                "freeTextAnswer": "string",
+                "statementSubType": "string",
+                "fldValue": {
+                    "companyName": "string",
+                    "companyNameOther": "string",
+                    "coverage": [
+                        {
+                            "coverageType": "string",
+                            "sumInsured": "string",
+                            "policyStatus": "string"
+                        }
+                    ]
+                }
+            }
+        ],
+        "payment": {
+            "mode": "string",
+            "originalInitialMethod": "string",
+            "originalRenewalMethod": "string",
+            "originalInitialMethodCode": "string",
+            "originalRenewalMethodCode": "string",
+            "method": "string",
+            "renewalMethod": "string",
+            "bankPartner": "string",
+            "originalBankPartnerCode": "string",
+            "premiumDuration": 0,
+            "billingMethod": "DIRECT_BILLING"
+        },
+        "paymentResult": {
+            "gateway": "string",
+            "status": "string",
+            "transRef": "string"
+        },
+        "producerId": "string",
+        "distributionChannelCode": "string",
+        "internalReplacement": "string",
+        "premiumTransactionType": "APPLY",
+        "qualificationTest": "string",
+        "premiumTransactionDate": "2020-08-10T17:30:00.000Z",
+        "cases": {
+            "masterCase": {
+                "reason": "string",
+                "comment": "string",
+                "status": "string",
+                "caseId": "string",
+                "createDate": "2020-08-10T17:30:00.000Z",
+                "integrationKey": "string",
+                "caseUpdate": true,
+                "caseStatus": "string",
+                "caseStatusReason": "string"
+            },
+            "subCases": [
+                {
+                    "type": "string",
+                    "status": "string",
+                    "reason": "string",
+                    "sources": [
+                        "string"
+                    ],
+                    "pendingFileNames": [
+                        "string"
+                    ],
+                    "caseId": "string",
+                    "medicalLoading": "string",
+                    "nonMedicalLoading": "string",
+                    "exclusion": "string",
+                    "counterOfferFlag": true,
+                    "createDate": "2020-08-10T17:30:00.000Z",
+                    "integrationKey": "string",
+                    "discounts": [
+                        {
+                            "planCode": "string",
+                            "discount": "string"
+                        }
+                    ],
+                    "caseOrigin": "HOME_PHONE",
+                    "applicationChangeCaseId": "string",
+                    "originalPremium": 0,
+                    "acceptPremiumAmount": 0,
+                    "caseUpdate": true
+                }
+            ],
+            "policyIssuanceCase": {
+                "reason": "string",
+                "comment": "string",
+                "status": "string",
+                "caseId": "string",
+                "createDate": "2020-08-10T17:30:00.000Z",
+                "updateDate": "2020-08-10T17:30:00.000Z",
+                "integrationKey": "string",
+                "caseUpdate": true
+            },
+            "crossAgeMasterCase": {
+                "reason": "string",
+                "comment": "string",
+                "status": "string",
+                "caseId": "string",
+                "createDate": "2020-08-10T17:30:00.000Z",
+                "integrationKey": "string",
+                "caseUpdate": true,
+                "caseStatus": "string",
+                "caseStatusReason": "string"
+            },
+            "crossAgeSubCases": [
+                {
+                    "type": "string",
+                    "status": "string",
+                    "reason": "string",
+                    "sources": [
+                        "string"
+                    ],
+                    "pendingFileNames": [
+                        "string"
+                    ],
+                    "caseId": "string",
+                    "medicalLoading": "string",
+                    "nonMedicalLoading": "string",
+                    "exclusion": "string",
+                    "counterOfferFlag": true,
+                    "createDate": "2020-08-10T17:30:00.000Z",
+                    "integrationKey": "string",
+                    "discounts": [
+                        {
+                            "planCode": "string",
+                            "discount": "string"
+                        }
+                    ],
+                    "caseOrigin": "HOME_PHONE",
+                    "applicationChangeCaseId": "string",
+                    "originalPremium": 0,
+                    "acceptPremiumAmount": 0,
+                    "caseUpdate": true
+                }
+            ]
+        },
+        "bankCode": "string",
+        "bankReferrer": {
+            "bankCode": "string",
+            "branchCode": "string",
+            "bankCodeWithBranchCode": "string",
+            "bankEmployeeReferrerCode": "string",
+            "bankEmployeeReferrerName": "string",
+            "bankReferrerCreationDate": "2020-08-10T17:30:00.000Z"
+        },
+        "appFeature": {
+            "appIndicator": "string",
+            "affinitySalesMode": true,
+            "salesCampaign": "string",
+            "submissionSaleMethod": "string",
+            "policyDeliveryMethod": "string",
+            "marketingConsent": false,
+            "policyRenewalReminderFlag": "string"
+        },
+        "lender": {
+            "name": "string",
+            "registrationNumber": "string",
+            "address": "string",
+            "integrationKey": "string"
+        },
+        "completeDate": "2020-08-10T17:30:00.000Z",
+        "withdrawnDate": "2020-08-10T17:30:00.000Z",
+        "declinedDate": "2020-08-10T17:30:00.000Z",
+        "postponedDate": "2020-08-10T17:30:00.000Z",
+        "investmentPortfolio": [
+            {
+                "planCode": "string",
+                "portfolioName": "string",
+                "rebalancingFrequency": "string",
+                "notes": "string",
+                "accountAllocations": [
+                    {
+                        "accountType": "FIXED_ACCOUNT",
+                        "accountAllocationPercentage": 0,
+                        "fundSelections": [
+                            {
+                                "fundCode": "string",
+                                "fundName": "string",
+                                "allocationPercentage": 0,
+                                "allocationType": "PREMIUM_ALLOCATION_INSTRUCTION"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "submissionDate": "2020-08-10T17:30:00.000Z",
+        "caseNumber": "string",
+        "signDate": "2020-08-10T17:30:00.000Z",
+        "modifiedEndowmentContract": true,
+        "salesType": "IN_PERSON_SALE",
+        "policyYearDateReason": "CURRENT_DATE",
+        "brokers": [
+            {
+                "ocdmId": "string",
+                "code": "string",
+                "fullName": "string",
+                "splitPercentage": 0
+            }
+        ],
+        "distributor": {
+            "code": "string",
+            "name": "string",
+            "ocdmId": "string",
+            "splitPercentage": 0,
+            "referralSource": "string",
+            "innerCircle": true,
+            "priority": true
+        },
+        "decision": {
+            "rateMultiple": 0,
+            "highNetWorthType": "string",
+            "residenceCountry": "string",
+            "adminCountryCode": "string",
+            "countryOfMedicalExam": "string",
+            "lastMedicalEvidenceDate": "2020-08-10T17:30:00.000Z",
+            "assessmentExpirationDate": "2020-08-10T17:30:00.000Z",
+            "mortality": "string",
+            "reason": "string",
+            "smokeClass": "NONSMOKER",
+            "smokeRiskClass": "SUPER_PREFERRED",
+            "riskClass": "SUPER_PREFERRED",
+            "residencyClassification": "string",
+            "decisionComments": "string",
+            "impairment": [
+                "string"
+            ],
+            "impairmentPrimary": "string",
+            "decisionCommentsAdd": [
+                "string"
+            ],
+            "amountApplied": 0,
+            "amendments": "string",
+            "trueDecision": {
+                "reason": "string",
+                "riskClass": "string",
+                "permFlatExtraBasedOn": "string",
+                "permFlatExtraAmount": 0,
+                "tempFlatExtraBasedOn": "string",
+                "tempFlatExtraAmount": 0,
+                "tempFlatExtraYear": 0
+            },
+            "decision": "string",
+            "examDate": "2020-08-10T17:30:00.000Z",
+            "complianceReviewCompleted": true,
+            "overRide": true,
+            "insurableInterest": true,
+            "decisionRiders": [
+                {
+                    "riderName": "string",
+                    "riderAmount": 0,
+                    "riderPercentage": 0,
+                    "riderDecision": "string"
+                }
+            ],
+            "exclusionsDesc": "string",
+            "riskType": "string"
+        },
+        "reinsurance": {
+            "faceAmount": 0,
+            "faceAmountCurrency": "string",
+            "faceAmountRetained": 0,
+            "reinMethod": "string",
+            "exceptions": [
+                "string"
+            ],
+            "jumboCase": true,
+            "jumboNotification": "string",
+            "reinsuranceCalculator": true,
+            "reinCountry": "string",
+            "reinCaseNumber": "string",
+            "requestDate": "2020-08-10T17:30:00.000Z",
+            "requestAmount": 0,
+            "amountApproved": 0,
+            "amountCanceled": 0,
+            "uwClass": "string",
+            "flatExtra": 0,
+            "years": 0,
+            "requirementApplicable": "string",
+            "currentlyRetained": 0,
+            "inforceWithinManulifeTwoYears": 0,
+            "inforceMlBeyondTwoYrs": 0,
+            "inforceMlWithinTwoYrs": 0,
+            "note": "string",
+            "availRetention": 0,
+            "ultimateTotalLineWithML": 0,
+            "ultimateTotalLineWithAllCompanies": 0,
+            "howToProceed": "string",
+            "facultativeReinsurance": {
+                "expirationDate": "2020-08-10T17:30:00.000Z"
+            }
+        },
+        "submissionComments": "string",
+        "nbsfStatus": "NEW",
+        "backdated": false,
+        "qualityReview": "string",
+        "otherCarriersExpectedAmt": "string",
+        "caseId": "string",
+        "wireReceivedDate": "2020-08-10T17:30:00.000Z",
+        "illustratorPin": "string",
+        "mailDate": "2020-08-10T17:30:00.000Z",
+        "premiumDetails": {
+            "targetCommissionPremium": 0,
+            "minimumInitialPremium": 0,
+            "noLapseGuaranteePremium": 0,
+            "sevenPayPremium": 0
+        },
+
+        "lawsonProductCode": "string",
+        "premiumPaymentDetail": {
+            "paymentOption": "SPECIFY_AMOUNT",
+            "premiumAmount": 0,
+            "paymentSchedule": [
+                {
+                    "paymentOption": "SPECIFY_AMOUNT",
+                    "premiumAmount": 0,
+                    "fromAgeYear": "string",
+                    "toAgeYear": "string",
+                    "specifyMonth": 0
+                }
+            ],
+            "durationAgeYears": "string",
+            "paymentMode": "MONTHLY",
+            "lumpSumOption": "SPECIFY_AMOUNT",
+            "lumpSumAmount": 0,
+            "lumpSumSpecifyMonth": 0,
+            "lumpSumSchedule": [
+                {
+                    "paymentOption": "SPECIFY_AMOUNT",
+                    "premiumAmount": 0,
+                    "fromAgeYear": "string",
+                    "toAgeYear": "string",
+                    "specifyMonth": 0
+                }
+            ]
+        },
+        "stagingCaseId": "string",
+        "brokerSubmissionDate":"2020-08-10T17:30:00.000Z",
+        "productId": "string",
+        "manulifeAssessment":"string"
+    }
+}

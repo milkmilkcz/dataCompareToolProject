@@ -1,0 +1,69 @@
+{
+  "fundSegment": {
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "documentState": 1,
+    "id": "string",
+    "market": "string",
+    "policyNum": "string",
+    "reversedFlag": false,
+    "segmentPlans": [
+      {
+        "planCode": "string",
+        "planName": "string",
+        "segments": [
+          {
+            "details": [
+              {
+                "adjustSegmentCreditBalance": 1.34,
+                "createdDate": "2020-08-10T17:30:00.000Z",
+                "currency": "string",
+                "dbpFundBalance": 1.34,
+                "fundBalance": 1.34,
+                "fundBalanceAllocation": 1.34,
+                "fundBalanceQuota": 1.34,
+                "fundUnit": 1.34,
+                "initSegmentAmount": 1.34,
+                "interest": 1.34,
+                "lastBusinessDay": "2020-08-10T17:30:00.000Z",
+                "lastMovementDate": "2020-08-10T17:30:00.000Z",
+                "lastMvyDate": "2020-08-10T17:30:00.000Z",
+                "segmentInDate": "2020-08-10T17:30:00.000Z",
+                "segmentInDateStr": "string",
+                "segmentInFundPrice": 1.34,
+                "segmentMaturePolicyMonth": 2,
+                "segmentPolicyMonth": 2,
+                "segmentPolicyYear": 2,
+                "segmentStatus": "string"
+              }
+            ],
+            "fundCode": "string"
+          }
+        ]
+      }
+    ],
+	"segmentHistory": [
+		{
+		  "fundCode": "SHIA",
+		  "details": [
+			{
+			  "segmentInDate": "2026-01-15T05:00:00.000Z",
+			  "segmentInDateStr": "20260115000000",
+			  "originalFundBalance": "1.34",
+			  "netAmount": "1.34",
+			  "fundBalance": "1.34",
+			  "originalAdjustSegmentCreditBalance": "1.34",
+			  "netAdjustSegmentCreditBalance": "1.34",
+			  "adjustSegmentCreditBalance": "1.34",
+			  "createdDate": "2026-02-02T10:08:20.979Z",
+			  "correlatedId": "2026020200010003000004",
+			  "reason": "SEGMENT_CREATION_IN"
+			}
+		  ]
+		}
+	],
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "version": 0
+  }
+}

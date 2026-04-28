@@ -1,0 +1,36 @@
+{
+  "policyPaymentCase": {
+    "id": "string",
+    "market": "string",
+    "agreementNum": "string",
+    "caseId": "string",
+    "currentQuotationId": "string",
+    "historyQuotationIds": [
+      "string"
+    ],
+    "caseStatus": "string",
+    "caseStatusReason": "string",
+    "activeOrderId": "string",
+    "allOrderIds": [
+      "string"
+    ],
+    "paymentMethod": "string",
+    "bankPartner": "string",
+    "source": "REINSTATEMENT",
+    "masterCaseId": "string",
+    "currentVersion": 0,
+    "createDate": "2020-08-10T17:30:00.000Z",
+    "updateDate": "2020-08-10T17:30:00.000Z",
+    "loanRepaymentCalculator": {
+      "loanType": "APL",
+      "quotationExpiryDate": "2020-08-10T17:30:00.000Z",
+      "quoteDate": "2020-08-10T17:30:00.000Z",
+      "totalLoanBalance": 0,
+      "paymentReceived": 0,
+      "remainingPaymentAmount": 0,
+      "currencyCode": "string"
+    },
+    "status": "INITIALED",
+    "documentState": 1
+  }
+}

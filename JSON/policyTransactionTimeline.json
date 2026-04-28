@@ -1,0 +1,569 @@
+{
+    "policyTransactionTimeline": {
+        "noOfTransfer": "string",
+        "endOfDate": "2025-05-20T04:00:00.000Z",
+        "accountBalanceVos": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "automatedTransferVoList": [
+            {
+                "account": "string",
+                "transferOutAmount": 0,
+                "transferInAmount": 0
+            }
+        ],
+        "cancellationTansferInstructionVos": [
+            {
+                "account": "string",
+                "transferOutPercentage": 0,
+                "tansferOutAmount": 0,
+                "transferInPercentage": 0,
+                "transferInAmount": 0
+            }
+        ],
+        "cancelADTCalendar": {
+            "noOfTransfer": "string",
+            "endOfDate": "2025-05-20T04:00:00.000Z",
+            "automatedTransferVoList": [
+                {
+                    "account": "string",
+                    "transferOutAmount": 0,
+                    "transferInAmount": 0
+                }
+            ]
+        },
+        "records": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "indexLoanPrincipalDetail": {
+            "account": "string",
+            "beforeFund": 0,
+            "netAmount": 0,
+            "fundBalance": 0,
+            "segmentDetails": [
+                {
+                    "segmentInDate": "2025-12-15T05:00:00.000Z",
+                    "segmentInDateStr": "string",
+                    "beforeValue": "3.14",
+                    "netValue": "3.14",
+                    "afterValue": "3.14",
+                    "beforeAdjustSegmentCreditBalance": "3.14",
+                    "netAdjustSegmentCreditBalance": "3.14",
+                    "afterAdjustSegmentCreditBalance": "3.14"
+                }
+            ]
+        },
+        "cashLoanInstructionVo": {
+            "loanType": "string",
+            "standardVariableLoanRate": 0,
+            "loanAccountCreditingRate": 0,
+            "numberOfLoans": 0
+        },
+        "cashLoanDetailsVos": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "premiumType": "string",
+        "paymentMethod": "string",
+        "bankPartner": "string",
+        "payorName": "string",
+        "payorId": "string",
+        "refNo": "string",
+        "receiptNumber": "string",
+        "currency": "string",
+        "verifierName": "string",
+        "receivedDate": "2025-05-20T04:00:00.000Z",
+        "idNo": "string",
+        "idType": "string",
+        "email": "string",
+        "phoneNo": "string",
+        "updateBy": "string",
+        "sourceOfPayment": "string",
+        "address": "string",
+        "discrepancyReson": "string",
+        "payorType": "string",
+        "sourcePolicyNo": "string",
+        "grossDeathBenefit": {
+            "originalDeathBenefitAmount": 0,
+            "newDeathBenefitAmount": 0,
+            "netDeathBenefitAmount": 0
+        },
+        "netDeathBenefit": {
+            "originalDeathBenefitAmount": 0,
+            "newDeathBenefitAmount": 0,
+            "netDeathBenefitAmount": 0
+        },
+        "grossSurrenderValue": {
+            "originalSurrenderValueAmount": 0,
+            "newSurrenderValueAmount": 0,
+            "netSurrenderValueAmount": 0
+        },
+        "currencyCode": "string",
+        "paymentDisbursementDetails": [
+            {
+                "disbursementMethod": "string",
+                "recipientName": "string",
+                "disbursementAmount": 0,
+                "financialAccount": "string",
+                "referenceNo": "string",
+                "replacementExchangePolicyNo": "string"
+            }
+        ],
+        "cashSurrenderValue": 0,
+        "surrenderCharge": 0,
+        "enhancedCashValueAmount": 0,
+        "policyIndebtedness": 0,
+        "suspenseAccountValue": 0,
+        "policyValue": 0,
+        "enhancedCashValue": 0,
+        "totalSuspense": 0,
+        "totalLoanBalance": 0,
+        "netSurrenderValue": 0,
+        "marketValueAdjustment": 0,
+        "policyValueCGPV": 0,
+        "paymentSuspense": 0,
+        "indexLoanDetailsAccount": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "inforceTansferInstructionVos": [
+            {
+                "account": "string",
+                "transferOutPercentage": 0,
+                "tansferOutAmount": 0,
+                "transferInPercentage": 0,
+                "transferInAmount": 0
+            }
+        ],
+        "subType": "string",
+        "coiCharge": {
+            "base": 0,
+            "totalCharge": 0
+        },
+        "issueCharge": {
+            "issueCharge": 0,
+            "bfaCharge": 0,
+            "sfaCharge": 0
+        },
+        "monthlyFee": {
+            "bfaCharge": 0,
+            "sfaCharge": 0,
+            "accCharge": 0,
+            "ipcCharge": 0,
+            "totalCharge": 0,
+            "mecCharge": 0
+        },
+        "backdateMonthlyChargeDate": "05/2025",
+        "quoteDate": "2025-05-20T04:00:00.000Z",
+        "paidOffDetailsAccountBalanceVoList": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "partialOrFullRepaymentDetails": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "closedCount": "string",
+        "crsTimelineDetailVos": [
+            {
+                "accountName": "string",
+                "changeEffectiveDate": "2025-05-20T04:00:00.000Z"
+            }
+        ],
+        "lapseTestTransactionTimeLine": [
+            {
+                "checkType": "string",
+                "result": "string"
+            }
+        ],
+        "policyStatusReason": "string",
+        "policyFreezeVoList": [
+            {
+                "instruction": "string",
+                "freezeStatusEnum": "freeze",
+                "operationBy": "string",
+                "operationDate": "2025-05-20T04:00:00.000Z"
+            }
+        ],
+        "payor": {
+            "delink": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ],
+            "change": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        "beneficiary": {
+            "delink": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ],
+            "change": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        "owner": {
+            "delink": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ],
+            "change": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        "collateral": {
+            "delink": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ],
+            "change": [
+                {
+                    "rootOcdmId": "string",
+                    "ocdmAccountID": "string",
+                    "isNewLinkToPolicy": true,
+                    "isNewAccount": true,
+                    "changeFieldDetails": [
+                        {
+                            "fieldName": "string",
+                            "oldValue": "string",
+                            "newValue": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        "premiumRecords": [
+            {
+                "account": "string",
+                "previousAllocation": 0,
+                "newAllocation": 0,
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "targetPremium": {
+            "targetCommissionablePremium": 0,
+            "targetPremiumApplied": 0,
+            "excessPremiumApplied": 0
+        },
+        "premiumApplyRecordsList": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "monthlyCharge": 0,
+        "subCorrelateId": "string",
+        "shadowAccountDetails": {
+            "account": "string",
+            "beforeFund": 0,
+            "netAmount": 0,
+            "fundBalance": 0,
+            "segmentDetails": [
+                {
+                    "segmentInDate": "2025-12-15T05:00:00.000Z",
+                    "segmentInDateStr": "string",
+                    "beforeValue": "3.14",
+                    "netValue": "3.14",
+                    "afterValue": "3.14",
+                    "beforeAdjustSegmentCreditBalance": "3.14",
+                    "netAdjustSegmentCreditBalance": "3.14",
+                    "afterAdjustSegmentCreditBalance": "3.14"
+                }
+            ]
+        },
+        "terminationLoanDetails": [
+            {
+                "account": "string",
+                "beforeFund": 0,
+                "netAmount": 0,
+                "fundBalance": 0,
+                "segmentDetails": [
+                    {
+                        "segmentInDate": "2025-12-15T05:00:00.000Z",
+                        "segmentInDateStr": "string",
+                        "beforeValue": "3.14",
+                        "netValue": "3.14",
+                        "afterValue": "3.14",
+                        "beforeAdjustSegmentCreditBalance": "3.14",
+                        "netAdjustSegmentCreditBalance": "3.14",
+                        "afterAdjustSegmentCreditBalance": "3.14"
+                    }
+                ]
+            }
+        ],
+        "market": "string",
+        "policyNum": "string",
+        "timelineType": "TRANSACTION",
+        "transactionType": "COLLECTION",
+        "status": "SUCCESS",
+        "transactionDate": "2025-05-20T04:00:00.000Z",
+        "amount": 0,
+        "beforePolicyValue": 0,
+        "afterPolicyValue": 0,
+        "reason": "string",
+        "correlateId": "string",
+        "financialIndicator": true,
+        "eventDate": "2025-05-20T04:00:00.000Z",
+        "effectiveDate": "2025-05-20T04:00:00.000Z",
+        "accountingCorrelateId": "string",
+        "undoRedoCorrelatedId": "string",
+        "commissionCorrelateId": "string",
+        "id": "string",
+        "createdBy": "SYSTEM",
+        "createdTime": "2025-05-20T04:00:00.000Z",
+        "updatedBy": "SYSTEM",
+        "updatedTime": "2025-05-20T04:00:00.000Z",
+        "version": 0,
+        "documentState": 1,
+        "backdateMonthlyChargeDate": "05/2025",
+        "eventSequence": "250027821",
+        "undoEventSequence": "250027821",
+        "redoEventSequence": "250027821",
+        "redoIndicator": true,
+        "inCorridor": true,
+        "policyStatusChange": {
+            "policyStatusOriginal": "string",
+            "policyStatusNew": "string",
+            "policyStatusReasonOriginal": "string",
+            "policyStatusReasonNew": "string"
+        },
+        "deficiencyInfo": {
+            "deficiencyMonthlyDeduction": 123,
+            "deficiencyLoanAmount": 123,
+            "deficiencyTotalAmount": 123
+        },
+        "deficiencyInfoItems": [
+            {
+                "type": "Deficiency monthly deduction",
+                "original": 0,
+                "net": 0,
+                "balance": 0
+            },
+            {
+                "type": "Deficiency waived",
+                "original": 0,
+                "net": 0,
+                "balance": 0
+            },
+            {
+                "type": "Deficiency loan",
+                "original": 0,
+                "net": 0,
+                "balance": 0
+            },
+            {
+                "type": "Deficiency total",
+                "original": 0,
+                "net": 0,
+                "balance": 0
+            }
+        ]
+    }
+}

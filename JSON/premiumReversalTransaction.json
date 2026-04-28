@@ -1,0 +1,23 @@
+{
+  "premiumReversalTransaction": {
+    "id": "string",
+    "agreementNum": "string",
+    "country": "string",
+    "market": "string",
+    "triggeredBy": "string",
+    "premiumApplyReversalDate": "2020-08-10T17:30:00.000Z",
+    "effectiveDate": "2020-08-10T17:30:00.000Z",
+    "reversalAmount": 0,
+    "collectionCurrencyCode": "string",
+    "premiumAmountApplied": 0,
+    "premiumApplyCurrencyCode": "string",
+    "exchangeRate": 0,
+    "rejectReason": "string",
+    "currentVersion": 0,
+    "remark": "string",
+    "userId": "string",
+    "premiumActuallyTolerance": 0,
+    "reversalSuccessSequence": 0,
+    "documentState": 1
+  }
+}

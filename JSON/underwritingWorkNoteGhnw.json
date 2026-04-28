@@ -1,0 +1,32 @@
+{
+  "underwritingWorkNoteGhnw": {
+    "id": "string",
+    "createdTime": "2024-08-10T17:30:00.000Z",
+    "updatedTime": "2024-08-10T17:30:00.000Z",
+    "createdBy": "string",
+    "updatedBy": "string",
+    "market": "string",
+    "policyNum": "string",
+    "commentTitleName": "string",
+    "summary": "string",
+    "description": "string",
+    "ownerOcdmId": "string",
+    "ownerOcdmName": "string",
+    "workNoteStatus": "PUBLISHED",
+    "referenceCase": "string",
+    "lastOperationDate": "2024-08-10T17:30:00.000Z",
+    "offsetTimeZone": "string",
+    "version": 0,
+    "documentState": 0,
+    "underwritingWorkNotesGroup": {
+      "id": "string",
+      "createdTime": "2024-08-10T17:30:00.000Z",
+      "updatedTime": "2024-08-10T17:30:00.000Z",
+      "createdBy": "string",
+      "updatedBy": "string",
+      "noteTitleName": "string",
+      "version": 0,
+      "documentState": 0
+    }
+  }
+}

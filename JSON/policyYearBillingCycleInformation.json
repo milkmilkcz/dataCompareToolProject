@@ -1,0 +1,61 @@
+{
+  "policyYearBillingCycleInformation": {
+    "id": "string",
+    "market": "string",
+    "agreementNum": "string",
+    "premiumMode": "string",
+    "policyYear": 0,
+    "billingYear": 0,
+    "premiumCountOfCurrentPolicyYear": 0,
+    "premiumReversalCountOfCurrentPolicyYear": 0,
+    "totalPremiumCount": 0,
+    "totalPremiumReversalCount": 0,
+    "policyMonthCount": 0,
+    "policyPreAvyDate": "2020-08-10T17:30:00.000Z",
+    "policyAvyDate": "2020-08-10T17:30:00.000Z",
+    "reverseEnable": true,
+    "billingCycle": [
+      {
+        "refId": "string",
+        "policyStatus": "string",
+        "transactionDate": "2020-08-10T17:30:00.000Z",
+        "paidToDate": "2020-08-10T17:30:00.000Z",
+        "billToDate": "2020-08-10T17:30:00.000Z",
+        "eventSequence": 0,
+        "policyYear": 0,
+        "appliedPremiumInfo": [
+          {
+            "refId": "string",
+            "policyYear": 0,
+            "eventSequence": 0,
+            "policyStatus": "string",
+            "premiumAmount": 0,
+            "toleranceAmount": 0,
+            "transactionDateTime": "2020-08-10T17:30:00.000Z",
+            "paidToDateTime": "2020-08-10T17:30:00.000Z",
+            "billToDateTime": "2020-08-10T17:30:00.000Z",
+            "reverseStatus": false,
+            "refReversalId": "string"
+          }
+        ],
+        "reversalPremiumInfo": [
+          {
+            "refId": "string",
+            "policyYear": 0,
+            "eventSequence": 0,
+            "policyStatus": "string",
+            "premiumAmount": 0,
+            "toleranceAmount": 0,
+            "transactionDateTime": "2020-08-10T17:30:00.000Z",
+            "paidToDateTime": "2020-08-10T17:30:00.000Z",
+            "billToDateTime": "2020-08-10T17:30:00.000Z",
+            "reverseStatus": false,
+            "refReversalId": "string"
+          }
+        ]
+      }
+    ],
+    "currentVersion": 0,
+    "documentState": 1
+  }
+}

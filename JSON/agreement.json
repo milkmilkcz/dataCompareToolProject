@@ -1,0 +1,1188 @@
+{
+    "agreement": {
+        "id": "string",
+        "agreementNum": "string",
+        "uwStatus": "CLEAN_CASE",
+        "agreementType": "string",
+        "sourceAgreementNum": "string",
+        "freelookStatus": "string",
+        "freelookExpireReason": "CALENDAR",
+        "freelookActualEndDate": "2020-08-10T17:30:00.000Z",
+        "freelookStartDate": "2020-08-10T17:30:00.000Z",
+        "freelookEndDate": "2020-08-10T17:30:00.000Z",
+        "effectiveDate": "2020-08-10T17:30:00.000Z",
+        "contractPremium": 0,
+        "distributionChannelCode": "string",
+        "nextYearDiscountedPremium": 0,
+        "nextYearModalPremium": 0,
+        "renewedYearByAvy": "string",
+        "country": "string",
+        "status": "string",
+        "premiumStatus": "string",
+        "previousStatus": "string",
+        "previousPremiumStatus": "string",
+        "agreementIssueDate": "2020-08-10T17:30:00.000Z",
+        "terminationDate": "2020-08-10T17:30:00.000Z",
+        "terminationReason": "string",
+        "currencyCode": "string",
+        "isFrozen": "string",
+        "currentVersion": 0,
+        "docUpdatedBy": "string",
+        "docUpdatedDatetime": "2020-08-10T17:30:00.000Z",
+        "docCreatedDatetime": "2020-08-10T17:30:00.000Z",
+        "docCreatedBy": "string",
+        "contractDeliveryAcknowledgement": false,
+        "supplementary":
+        {
+            "applicationSubmissionDate": "2020-08-10T17:30:00.000Z",
+            "aplExtendedDays": 0,
+            "aplExtendedDate": "2020-08-10T17:30:00.000Z",
+            "benefitBillRiderIndicator": "string",
+            "changeInsureOption": "string",
+            "commissionWithholdDate": "2020-08-10T17:30:00.000Z",
+            "corridorPercentage": 0,
+            "hasEndownment": "string",
+            "dividend":
+            {
+                "dividendOption": "string",
+                "dividendUpToDate": "2020-08-10T17:30:00.000Z"
+            },
+            "insuredMortalityCode": "string",
+            "installmentAmount": 0,
+            "installmentEndDate": "2020-08-10T17:30:00.000Z",
+            "installmentStartDate": "2020-08-10T17:30:00.000Z",
+            "lumpSumPaymentAmount": 0,
+            "lastIPORefusalYear": "string",
+            "hasLnB": "string",
+            "pcEarnedInNB": "string",
+            "nbUpdateDate": "2020-08-10T17:30:00.000Z",
+            "nbCreatedBy": "string",
+            "nextEffectiveContactPremium": 0,
+            "nextEffectiveDiscountPremium": 0,
+            "nextEffectiveModalPremium": 0,
+            "nextEffectiveReRateDate": "2020-08-10T17:30:00.000Z",
+            "nextEffectiveAutopayDate": "2020-08-10T17:30:00.000Z",
+            "nextPayoutStartDate": "2020-08-10T17:30:00.000Z",
+            "nextRebalanceDate": "2020-08-10T17:30:00.000Z",
+            "overrideBillingDate": "2020-08-10T17:30:00.000Z",
+            "overloanIndicator": "string",
+            "loanRepaymentAmount": 0,
+            "policyClaimDate": "2020-08-10T17:30:00.000Z",
+            "policyReleaseDate": "2020-08-10T17:30:00.000Z",
+            "policyReleaseType": "string",
+            "remark": "string",
+            "prefixCode": "string",
+            "priceReserveDate": "2020-08-10T17:30:00.000Z",
+            "rebalanceIndicator": "string",
+            "recurrentBillIndicator": "string",
+            "recurrentBillStartDate": "2020-08-10T17:30:00.000Z",
+            "restrictionCode1": "string",
+            "restrictionCode2": "string",
+            "restrictionCode3": "string",
+            "isExcludeFromLocalCase": "string",
+            "reservedDNRAmount": 0,
+            "remainingGuaranteeAmount": 0,
+            "remainingLifeIncome": 0,
+            "specialClass": "string",
+            "subjectToCode": "string",
+            "tliaCode1": "string",
+            "tliaCode2": "string",
+            "tliaCode3": "string",
+            "cenishingPremiumPoint": "string",
+            "medicalCode": "1",
+            "medicalDate": "string",
+            "franchiseNumber": "string",
+            "guaranteeWithdrawalAmount": 0,
+            "guaranteeWithdrawalBenefit": 0,
+            "lifeIncome": 0,
+            "conversionDate": "2020-08-10T17:30:00.000Z",
+            "overrideLoanInterestRate": 0,
+            "lifeReplacOptionEffectiveDate": "2020-08-10T17:30:00.000Z",
+            "workArea": "string",
+            "exceptionBillCode": "string",
+            "replacement":
+            {
+                "lumpPremium": 0
+            },
+            "exchange":
+            [
+                {
+                    "relatedPolicyNumber": "string",
+                    "cvFromExchange": 0,
+                    "loanFromExchange": 0
+                }
+            ],
+            "initialSurrender": 0,
+            "initSurrenderCharge": 0,
+            "initMaxSurrenderCharge": 0,
+            "initSurrenderChargeLimit": 0,
+            "tcp": 0
+        },
+        "agents":
+        [
+            {
+                "code": "string",
+                "referralCode": "string",
+                "type": "string",
+                "status": "string",
+                "splitPercentage": 0,
+                "ocdmAccountID": "string",
+                "bankCode": "string",
+                "branchCode": "string",
+                "bankCodeWithBranchCode": "string",
+                "bankEmployeeReferrerName": "string",
+                "bankReferrerCreationDate": "2020-08-10T17:30:00.000Z"
+            }
+        ],
+        "indicator":
+        {
+            "aeaIndicator": "string",
+            "aplLapseIndicator": "string",
+            "endownmentLoanIndicator": "string",
+            "hivIndicator": "string",
+            "ipoIndicator": "string",
+            "loyaltyBonusIndicator": "string",
+            "lumpSumPaymentIndicator": "string",
+            "nonLapseIndicator": "string",
+            "noLapseGuaranteeIndicator": "string",
+            "premiumHolidayAutopayIndicator": "string",
+            "premiumHolidayIndicator": "string",
+            "processFeeIndicator": "string",
+            "reinsuranceIndicator": "string",
+            "vanishingPremiumIndicator": "string",
+            "reinstatedIndicator": "string",
+            "campaignIndicator": "string",
+            "riotCivilIndicator": "string",
+            "taxIndicator": "string",
+            "recurrentBillIndicator": "string",
+            "rebalanceIndicator": "string",
+            "zapIndicator": "string",
+            "premiumCapIndicator": "string",
+            "usTaxCompliantIndicator": "string",
+            "replacementInd": "string",
+            "exchangeInd": "string"
+        },
+        "reinsurance":
+        {
+            "reinsuranceCode": "string",
+            "reinsuranceMethod": "string",
+            "reinsuranceDate": "2020-08-10T17:30:00.000Z",
+            "faceAmount": 0,
+            "faceAmountCurrency": "string",
+            "faceAmountRetained": 0,
+            "exceptions":
+            [
+                "string"
+            ],
+            "jumboCase": true,
+            "jumboNotification": "string",
+            "reinsuranceCalculator": true,
+            "reinCountry": "string",
+            "reinCaseNumber": "string",
+            "requestDate": "2020-08-10T17:30:00.000Z",
+            "requestAmount": 0,
+            "amountApproved": 0,
+            "amountCanceled": 0,
+            "uwClass": "string",
+            "flatExtra": 0,
+            "years": 0,
+            "requirementApplicable": "string",
+            "currentlyRetained": 0,
+            "inforceWithinManulifeTwoYears": 0,
+            "inforceMlBeyondTwoYrs": 0,
+            "inforceMlWithinTwoYrs": 0,
+            "note": "string",
+            "facultativeReinsurance":
+            {
+                "expirationDate": "2020-08-10T17:30:00.000Z"
+            },
+            "availRetention": 0,
+            "ultimateTotalLineWithML": 0,
+            "ultimateTotalLineWithAllCompanies": 0,
+            "howToProceed": "string"
+        },
+        "loans":
+        [
+            {
+                "cvPercentage": 0,
+                "highLoanBalance": 0,
+                "lastLoanBalanceMovementDate": "2020-08-10T17:30:00.000Z",
+                "loanBalance": 0,
+                "totalLoanInterestAccrued": 0,
+                "previousYearLoanBalance": 0
+            }
+        ],
+        "accounts":
+        {
+            "policySuspense":
+            [
+                {
+                    "tradeNum": "string",
+                    "agreementNum": "string",
+                    "suspenseAmount": 0,
+                    "currency": "string",
+                    "market": "string",
+                    "accountType": "policySuspenseAccount",
+                    "suspenseDetails":
+                    [
+                        {
+                            "tradeNum": "string",
+                            "agreementNum": "string",
+                            "caseId": "string",
+                            "suspenseAmount": 0,
+                            "currency": "string",
+                            "paymentMethod": "string",
+                            "orderId": "string",
+                            "bankPartner": "string",
+                            "market": "string",
+                            "transactionID": "string",
+                            "suspenseUsage": "PremiumApply",
+                            "suspenseType": "PREMIUM_APPLY",
+                            "businessEvent": "INIT_PAYMENT",
+                            "requestContent": "string",
+                            "requestSource": "string",
+                            "sourceChannel": "string",
+                            "targetChannel": "string",
+                            "premiumType": "string",
+                            "currentSuspenseAmount": 0,
+                            "suspenseDate": "2020-08-10T17:30:00.000Z",
+                            "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+                        }
+                    ],
+                    "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+                }
+            ],
+            "paymentSuspense":
+            [
+                {
+                    "tradeNum": "string",
+                    "agreementNum": "string",
+                    "suspenseAmount": 0,
+                    "currency": "string",
+                    "market": "string",
+                    "accountType": "policySuspenseAccount",
+                    "suspenseDetails":
+                    [
+                        {
+                            "tradeNum": "string",
+                            "agreementNum": "string",
+                            "caseId": "string",
+                            "suspenseAmount": 0,
+                            "currency": "string",
+                            "paymentMethod": "string",
+                            "orderId": "string",
+                            "bankPartner": "string",
+                            "market": "string",
+                            "transactionID": "string",
+                            "suspenseUsage": "PremiumApply",
+                            "suspenseType": "PREMIUM_APPLY",
+                            "businessEvent": "INIT_PAYMENT",
+                            "requestContent": "string",
+                            "requestSource": "string",
+                            "sourceChannel": "string",
+                            "targetChannel": "string",
+                            "premiumType": "string",
+                            "currentSuspenseAmount": 0,
+                            "suspenseDate": "2020-08-10T17:30:00.000Z",
+                            "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+                        }
+                    ],
+                    "lastUpdatedDate": "2020-08-10T17:30:00.000Z"
+                }
+            ]
+        },
+        "agreementComponents":
+        [
+            {
+                "agreementComponentType": "string",
+                "modelVersion": "string",
+                "agreementNum": "string",
+                "agreementComponentNum": "string",
+                "applicationNum": "string",
+                "applicationDate": "2020-08-10T17:30:00.000Z",
+                "submissionDate": "2020-08-10T17:30:00.000Z",
+                "issueDate": "2020-08-10T17:30:00.000Z",
+                "effectiveDate": "2020-08-10T17:30:00.000Z",
+                "lapseDate": "2020-08-10T17:30:00.000Z",
+                "maturityDate": "2020-08-10T17:30:00.000Z",
+                "freelookStartDate": "2020-08-10T17:30:00.000Z",
+                "freelookEndDate": "2020-08-10T17:30:00.000Z",
+                "freelookExpireReason": "CALENDAR",
+                "freelookActualEndDate": "2020-08-10T17:30:00.000Z",
+                "confirmationDate": "2020-08-10T17:30:00.000Z",
+                "producerID": "string",
+                "percentage": 0,
+                "productType": "TERM_LIFE",
+                "productLine": "IUL_BASE",
+                "productVersion": "string",
+                "faceAmountCurrency": "string",
+                "status": "string",
+                "premiumStatus": "string",
+                "statusReason": "string",
+                "previousStatus": "string",
+                "previousPremiumStatus": "string",
+                "totalDeathBenefit": 0,
+                "exclusionCode": "string",
+                "exclusionEndYear": "string",
+                "exclusionRemark": "string",
+                "terminationDate": "2020-08-10T17:30:00.000Z",
+                "terminationReason": "string",
+                "salesChannel": "string",
+                "banding": "string",
+                "benefitEffectiveYears": "string",
+                "premiumEffectiveYears": "string",
+                "deletedDate": "2020-08-10T17:30:00.000Z",
+                "deletedReasonCode": "string",
+                "createdReasonCode": "string",
+                "dividenedToBeEarn": 0,
+                "endownmentAccrualAmount": 0,
+                "endownmentPurchased": "string",
+                "benefitVersion": "string",
+                "toBeTerminatedDate": "2020-08-10T17:30:00.000Z",
+                "commissionAppliedMethod": "string",
+                "commissionRateVersion": "string",
+                "commissionControl": "string",
+                "commissionVersion": "string",
+                "bandingFaceAmount": 0,
+                "policyValueVersion": 0,
+                "faceRating": 0,
+                "originalBenefitAmount": 0,
+                "benefitType": "string",
+                "benefitCode": "string",
+                "benefitName": "string",
+                "productLineCode": "string",
+                "faceAmount": 0,
+                "revisedFaceAmount": 0,
+                "originalPremium": 0,
+                "componentsPremium": 0,
+                "componentEffectiveAge": "string",
+                "docUpdatedBy": "string",
+                "docUpdatedDatetime": "2020-08-10T17:30:00.000Z",
+                "docCreatedDatetime": "2020-08-10T17:30:00.000Z",
+                "docCreatedBy": "string",
+                "premiumFactor":
+                {
+                    "type": "string",
+                    "value": 0,
+                    "extendAttributes":
+                    [
+                        {
+                            "k": "string",
+                            "v": "string"
+                        }
+                    ]
+                },
+                "componentsFinancialOption":
+                {
+                    "discountedPremium": 0,
+                    "modalPremium": 0,
+                    "discount": 0,
+                    "basicPremium": 0,
+                    "extraPremium": 0,
+                    "premiumWithLoading": 0,
+                    "annualPremium": 0,
+                    "originalDiscountedPremium": 0,
+                    "nextYearPremium": 0,
+                    "nextYearDiscountedPremium": 0,
+                    "premiumVersion": "string",
+                    "nextPremiumAfterRerate": 0,
+                    "nextDiscountedPremiumAfterRerate": 0,
+                    "nextYearWaivedPremium": 0,
+                    "amountDue": 0,
+                    "plannedPremium": 0,
+                    "minInitialPremium": 0,
+                    "initialAmount": 0,
+                    "initialSalesAmount": 0,
+                    "noLapseGuaranteePremium": 0,
+                    "policyValue": 0,
+                    "dbPolicyValue": 0,
+                    "extendAttributes":
+                    [
+                        {
+                            "k": "string",
+                            "v": "string"
+                        }
+                    ],
+                    "targetCommissionablePremium": 0,
+                    "billingMethod":"string"
+                },
+                "pua":
+                {
+                    "interestRate": 0,
+                    "participatingCode": "string",
+                    "puaEarnedCurrentYear": 0,
+                    "totalPuaEarned": 0
+                },
+                "insuredRating":
+                {
+                    "ageForRating": 0,
+                    "genderForRating": "string",
+                    "occupationForRating": "string",
+                    "uwClass": "string",
+                    "uwSubClass": "string",
+                    "smokingCode": "string",
+                    "extendAttributes":
+                    [
+                        {
+                            "k": "string",
+                            "v": "string"
+                        }
+                    ],
+                    "nearestAgeForRating": 0
+                },
+                "insured":
+                [
+                    {
+                        "ocdmAccountID": "string",
+                        "percentage": 0,
+                        "marketingSourceId": "string",
+                        "extendAttributes":
+                        [
+                            {
+                                "k": "string",
+                                "v": "string"
+                            }
+                        ],
+                        "ocdmIntegrationKey": "string",
+                        "parentId": "string",
+                        "accountType": "INDIVIDUAL",
+                        "accountRoleType": "INDIVIDUAL",
+                        "relationToInsured": "string",
+                        "isPrimary": "string",
+                        "citizenship": "string",
+                        "priorityType": "PRIMARY"
+                    }
+                ],
+                "beneficiary":
+                [
+                    {
+                        "rootOcdmID": "string",
+                        "ocdmAccountID": "string",
+                        "percentage": 0,
+                        "relationshipToInsured": "string",
+                        "beneficiaryType": "primary",
+                        "extendAttributes":
+                        [
+                            {
+                                "k": "string",
+                                "v": "string"
+                            }
+                        ],
+                        "ocdmIntegrationKey": "string",
+                        "latestUpdatedTime": "2020-08-10T17:30:00.000Z",
+                        "isPrimary": "string",
+                        "parentId": "string",
+                        "accountType": "INDIVIDUAL",
+                        "accountRoleType": "INDIVIDUAL",
+                        "citizenship": "string",
+                        "priorityType": "PRIMARY",
+                        "lastUpdateTime": "2020-08-10T17:30:00.000Z",
+                        "uuid": "string"
+                    }
+                ],
+                "payors":
+                [
+                    {
+                        "rootOcdmID": "string",
+                        "ocdmAccountID": "string",
+                        "relationshipToInsured": "string",
+                        "isPrimary": "string",
+                        "parentId": "string",
+                        "accountType": "INDIVIDUAL",
+                        "accountRoleType": "INDIVIDUAL",
+                        "ocdmIntegrationKey": "string",
+                        "lastUpdateTime": "2020-08-10T17:30:00.000Z",
+                        "percentage": 0,
+                        "financialInstitution": "string",
+                        "accountCountry": "string",
+                        "bankApproved": "string",
+                        "citizenship": "string",
+                        "priorityType": "PRIMARY",
+                        "uuid": "string"
+                    }
+                ],
+                "layers":
+                [
+                    {
+                        "holdingCash":
+                        [
+                            {
+                                "type": "string",
+                                "currency": "string",
+                                "amount": 0
+                            }
+                        ],
+                        "layerType": "string",
+                        "triggerReason": "string",
+                        "layerPremium": 0,
+                        "totalPremiumPaid": 0,
+                        "currencyCode": "string",
+                        "faceAmount": 0,
+                        "revisedFaceAmount": 0,
+                        "effectiveAge": "string",
+                        "premiumEffectiveYears": "string",
+                        "benefitEffectiveYears": "string",
+                        "deathBenefitAmount": 0,
+                        "originalPremium": 0,
+                        "discountedPremium": 0,
+                        "startDate": "2020-08-10T17:30:00.000Z",
+                        "endDate": "2020-08-10T17:30:00.000Z",
+                        "extendAttributes":
+                        [
+                            {
+                                "k": "string",
+                                "v": "string"
+                            }
+                        ],
+                        "bandingFaceAmount": 0,
+                        "dividend":
+                        {
+                            "dividendOption": "string",
+                            "dividendUpToDate": "2020-08-10T17:30:00.000Z"
+                        },
+                        "supplementary":
+                        {
+                            "oldPremiumRateVersion": "string",
+                            "newPremiumRateVersion": "string",
+                            "oldFaceAmount": 0,
+                            "newFaceAmount": 0,
+                            "oldCoverageClass": "string",
+                            "newCoverageClass": "string"
+                        },
+                        "pua":
+                        {
+                            "interestRate": 0,
+                            "participatingCode": "string",
+                            "puaEarnedCurrentYear": 0,
+                            "totalPuaEarned": 0
+                        },
+                        "newYearLayerPremium": 0,
+                        "newYearLayerDiscountedPremium": 0,
+                        "dividendCurrentAmount": 0
+                    }
+                ],
+                "benefitExtendAttributes":
+                [
+                    {
+                        "k": "string",
+                        "v": "string"
+                    }
+                ],
+                "extendAttributes":
+                [
+                    {
+                        "k": "string",
+                        "v": "string"
+                    }
+                ],
+                "benefitConfiguration":
+                [
+                    {
+                        "publicOfferIndicator": "string",
+                        "packageIndicator": "string",
+                        "benefitAssociationCode": "string",
+                        "benefitCodeType": "string",
+                        "startDate": "2020-08-10T17:30:00.000Z",
+                        "endDate": "2020-08-10T17:30:00.000Z",
+                        "extendAttributes":
+                        [
+                            {
+                                "k": "string",
+                                "v": "string"
+                            }
+                        ]
+                    }
+                ],
+                "supplementary":
+                {
+                    "applicationSubmissionDate": "2020-08-10T17:30:00.000Z",
+                    "contractPrice": 0,
+                    "contractPremium": 0,
+                    "originalFaceAmount": 0,
+                    "agreementComponentClass": "string",
+                    "effectiveAge": 0,
+                    "overrideEffectiveAge": 0,
+                    "faceRatingPercentage": 0,
+                    "faceRatingEndDate": "2020-08-10T17:30:00.000Z",
+                    "faceRatingPremium": 0,
+                    "faceRatingStartDate": "2020-08-10T17:30:00.000Z",
+                    "jointLifeEffectiveAge": 0,
+                    "jointLifeClientNumber": "string",
+                    "jointLifeClientSexCode": "string",
+                    "jointLifeClientSmokeCode": "string",
+                    "jointLifeRelationToInsured": "string",
+                    "lienPrecentage": 0,
+                    "displaySequence": 0,
+                    "numberOfInsured": 0,
+                    "nextEffectiveContractPremium": 0,
+                    "premiumOverriderEndDate": "2020-08-10T17:30:00.000Z",
+                    "previousDeathBenefit": 0,
+                    "riskPremium": 0,
+                    "subjectToCode": "string"
+                },
+                "waivedPremium":
+                {
+                    "waviedPremiumEffectiveAge": 0,
+                    "waviedPremiumEffectiveDate": "string",
+                    "waviedPremiumOption": "string",
+                    "waviedPremiumAmount": 0,
+                    "waviedPremiumCalculatedByAge": 0,
+                    "waviedPremiumVersions": "string"
+                },
+                "premiumAdjument":
+                {
+                    "premiumAdjustmentEndDate": "2020-08-10T17:30:00.000Z",
+                    "premiumAdjustmentAmount": 0,
+                    "premiumAdjustmentPrecentage": 0,
+                    "premiumAdjustmentStartDate": "2020-08-10T17:30:00.000Z"
+                },
+                "indicator":
+                {
+                    "reinstatedIndicator": "string",
+                    "reinsuranceIndicator": "string",
+                    "riotCivialConditionIndicator": "string",
+                    "commissionChargeIndicator": "string"
+                },
+                "ipoStartDate": "2020-08-10T17:30:00.000Z",
+                "ipoTerminationDate": "2020-08-10T17:30:00.000Z",
+                "ipoFaceAmount": 0,
+                "cashValue": 0,
+                "rateMultiple": 0,
+                "highNetWorthType": "string",
+                "smokeClass": "NONSMOKER",
+                "smokeRiskClass": "SUPER_PREFERRED",
+                "residencyClassification": "string",
+                "deathBenefitOption": "LEVEL",
+                "ropDbPercentage": 0,
+                "featureFlag": true,
+                "flatRate":
+                {
+                    "tempFlat":
+                    {
+                        "basedOn": "string",
+                        "amount": 0,
+                        "flatExtraYear": 0
+                    },
+                    "permanent":
+                    {
+                        "basedOn": "string",
+                        "amount": 0
+                    }
+                },
+                "financialInstitution": "string",
+                "accountCountry": "string",
+                "bankApproved": "string",
+                "category": "string",
+                "policyReplacement": "string",
+                "replacementPolicyNumber": "string",
+                "otherCarriersToFac": false,
+                "ageBasisRule": "string",
+                "estimatedApe": 0,
+                "illustrationAge": 0,
+                "estimatedNbv": 0,
+                "totalPremiumAmount": 0,
+                "quotedPremiumAmount": 0,
+                "lumpSum": 0,
+                "reinsuranceMethod": "string",
+                "agreementStatusChangeDate": "2020-08-10T17:30:00.000Z",
+                "taiBenefitCode": "string",
+                "taiNumericBenefitCode": "string",
+                "maxNetAmountAtRisk": 0,
+                "coverageId":"string",
+                "expireRule":"string",
+                "expireDateRule":"string",
+                "expireAge": 0,
+                "expireDuration":"string",
+                "attainAge": 0,
+                "durationYear": 0
+            }
+        ],
+        "premiumHoliday":
+        {
+            "premiumHolidayEffectiveType": "string",
+            "premiumHolidayEndDate": "2020-08-10T17:30:00.000Z",
+            "premiumHolidayLastPaidToDate": "2020-08-10T17:30:00.000Z",
+            "premiumHolidayPaidToDate": "2020-08-10T17:30:00.000Z",
+            "premiumHolidayStartDate": "2020-08-10T17:30:00.000Z",
+            "policyReissuedDate": "2020-08-10T17:30:00.000Z"
+        },
+        "nonForfeitureOption":
+        {
+            "nfoEffectiveDate": "2020-08-10T17:30:00.000Z",
+            "nfoOption": "string"
+        },
+        "lastTransactionDate":
+        {
+            "lastActivityDate": "2020-08-10T17:30:00.000Z",
+            "lastCommissionTrailerDate": "2020-08-10T17:30:00.000Z"
+        },
+        "disability":
+        {
+            "disablementOption": "string",
+            "disablementDate": "2020-08-10T17:30:00.000Z",
+            "disabilityClass": "string"
+        },
+        "financialOption":
+        {
+            "premiumMode": "string",
+            "lastAVYDate": "2020-08-10T17:30:00.000Z",
+            "paymentMethod": "string",
+            "bankPartner": "string",
+            "lastPaidToDate": "2020-08-10T17:30:00.000Z",
+            "paidToDate": "2020-08-10T17:30:00.000Z",
+            "billToDate": "2020-08-10T17:30:00.000Z",
+            "currentDebitDay": 0,
+            "nextDebitDate": "2020-08-10T17:30:00.000Z",
+            "autopayCatgupCode": "string",
+            "effectiveAutopayDate": "2020-08-10T17:30:00.000Z",
+            "debitPickupDay": 0,
+            "pickupEffectiveDate": "2020-08-10T17:30:00.000Z",
+            "autopayRunNumber": 0,
+            "amountDue": 0,
+            "modalPremium": 0,
+            "discount": 0,
+            "basicPremium": 0,
+            "extraPremium": 0,
+            "premiumWithLoading": 0,
+            "discountedPremium": 0,
+            "annualPremium": 0,
+            "premiumPaidCounter": "string",
+            "extendAttributes":
+            [
+                {
+                    "k": "string",
+                    "v": "string"
+                }
+            ],
+            "targetCommissionPremium": 0,
+            "minimumInitialPremium": 0,
+            "noLapseGuaranteePremium": 0,
+            "sevenPayPremium": 0
+        },
+        "agreementSummary":
+        {
+            "agreementComponentType": "string",
+            "componentsPremium": 0,
+            "modelVersion": "string",
+            "agreementNum": "string",
+            "agreementComponentNum": "string",
+            "applicationNum": "string",
+            "submissionDate": "2020-08-10T17:30:00.000Z",
+            "issueDate": "2020-08-10T17:30:00.000Z",
+            "effectiveDate": "2020-08-10T17:30:00.000Z",
+            "lapseDate": "2020-08-10T17:30:00.000Z",
+            "freelookStartDate": "2020-08-10T17:30:00.000Z",
+            "freelookEndDate": "2020-08-10T17:30:00.000Z",
+            "confirmationDate": "2020-08-10T17:30:00.000Z",
+            "producerID": "string",
+            "status": "string",
+            "premiumStatus": "string",
+            "previousStatus": "string",
+            "previousPremiumStatus": "string",
+            "applicationDate": "2020-08-10T17:30:00.000Z",
+            "totalDeathBenefit": 0,
+            "exclusionCode": "string",
+            "exclusionEndYear": "string",
+            "exclusionRemark": "string",
+            "terminationDate": "2020-08-10T17:30:00.000Z",
+            "terminationReason": "string",
+            "salesChannel": "string",
+            "banding": "string",
+            "occupationClass": "string",
+            "docUpdatedBy": "string",
+            "docUpdatedDatetime": "2020-08-10T17:30:00.000Z",
+            "docCreatedDatetime": "2020-08-10T17:30:00.000Z",
+            "docCreatedBy": "string",
+            "benefitEffectiveYears": "string",
+            "premiumEffectiveYears": "string",
+            "deletedDate": "2020-08-10T17:30:00.000Z",
+            "deletedReasonCode": "string",
+            "createdReasonCode": "string",
+            "dividenedToBeEarn": 0,
+            "endownmentAccrualAmount": 0,
+            "endownmentPurchased": "string",
+            "benefitVersion": "string",
+            "toBeTerminatedDate": "2020-08-10T17:30:00.000Z",
+            "commissionAppliedMethod": "string",
+            "commissionRateVersion": "string",
+            "originalBenefitAmount": 0,
+            "benefitType": "string",
+            "benefitCode": "string",
+            "maturityDate": "string",
+            "faceAmount": 0,
+            "revisedFaceAmount": 0,
+            "originalPremium": 0,
+            "discountedPremium": 0,
+            "ComponentseEffectiveAge": 0,
+            "premiumFactor":
+            {
+                "type": "string",
+                "value": 0,
+                "extendAttributes":
+                [
+                    {
+                        "k": "string",
+                        "v": "string"
+                    }
+                ]
+            },
+            "summaryFinancialOption":
+            {
+                "discountedPremium": 0,
+                "modalPremium": 0,
+                "nextYearPremium": 0,
+                "nextYearDiscountedPremium": 0,
+                "premiumVersion": "string",
+                "nextPremiumAfterRerate": 0,
+                "nextDiscountedPremiumAfterRerate": 0,
+                "nextYearWaivedPremium": 0,
+                "extendAttributes":
+                [
+                    {
+                        "k": "string",
+                        "v": "string"
+                    }
+                ]
+            },
+            "insuredRating":
+            {
+                "ageForRating": 0,
+                "genderForRating": "string",
+                "occupationForRating": "string",
+                "uwClass": "string",
+                "uwSubClass": "string",
+                "smokingCode": "string",
+                "extendAttributes":
+                [
+                    {
+                        "k": "string",
+                        "v": "string"
+                    }
+                ],
+                "nearestAgeForRating": 0
+            },
+            "agreementFeature":
+            {
+                "appIndicator": "string",
+                "affinitySalesMode": true,
+                "salesCampaign": "string",
+                "submissionSaleMethod": "string",
+                "policyDeliveryMethod": "string",
+                "policyRenewalReminderFlag": "string"
+            },
+            "benefitExtendAttributes":
+            [
+                {
+                    "k": "string",
+                    "v": "string"
+                }
+            ],
+            "extendAttributes":
+            [
+                {
+                    "k": "string",
+                    "v": "string"
+                }
+            ],
+            "policyChangeFeature":
+            {
+                "rpuFlag": false,
+                "rpuEffectiveDate": "2020-08-10T17:30:00.000Z"
+            },
+            "policyClaimIndicator":
+            {
+                "chronicDiseaseClaimStatus": false,
+                "chronicDiseaseClaimDate": "2020-08-10T17:30:00.000Z"
+            }
+        },
+        "agreementDocument":
+        [
+            {
+                "documentId": "string",
+                "documentName": "string",
+                "requestId": "string",
+                "documentDate": "2020-08-10T17:30:00.000Z",
+                "type": "string",
+                "generateDate": "2020-08-10T17:30:00.000Z",
+                "fileFormat": "string",
+                "ocdmId": "string",
+                "storeType": "ALFRESCO",
+                "docDescription": "string",
+                "docStatus": "string",
+                "docCategory": "OUTSTANDING",
+                "docCreatedDate": "2020-08-10T17:30:00.000Z",
+                "docReceivedDate": "2020-08-10T17:30:00.000Z",
+                "docFollowupDate": "2020-08-10T17:30:00.000Z",
+                "docComment": "string"
+            }
+        ],
+        "owners":
+        [
+            {
+                "rootOcdmID": "string",
+                "ocdmAccountID": "string",
+                "percentage": 0,
+                "marketingSourceId": "string",
+                "relationshipToInsured": "string",
+                "isPrimary": "string",
+                "parentId": "string",
+                "accountType": "INDIVIDUAL",
+                "accountRoleType": "INDIVIDUAL",
+                "extendAttributes":
+                [
+                    {
+                        "k": "string",
+                        "v": "string"
+                    }
+                ],
+                "citizenship": "string",
+                "priorityType": "PRIMARY",
+                "lastUpdateTime": "2020-08-10T17:30:00.000Z",
+                "ownershipJurisdiction":"string"
+            }
+        ],
+        "surrenders":
+        [
+            {
+                "reason": "LAPSE",
+                "surrenderDate": "2020-08-10T17:30:00.000Z",
+                "refundAmount": 0,
+                "caseNum": "string"
+            }
+        ],
+        "agreementLender":
+        {
+            "ocdmAccountID": "string"
+        },
+        "decision":
+        {
+            "highNetWorthType": "string",
+            "residencyClassification": "string",
+            "residenceCountry": "string",
+            "adminCountryCode": "string",
+            "smokeClass": "NONSMOKER",
+            "smokeRiskClass": "SUPER_PREFERRED",
+            "countryOfMedicalExam": "string",
+            "lastMedicalEvidenceDate": "2020-08-10T17:30:00.000Z",
+            "assessmentExpirationDate": "2020-08-10T17:30:00.000Z",
+            "mortality": "string",
+            "rateMultiple": 0,
+            "deathBenefitOption": "LEVEL",
+            "ropDbPercentage": 0,
+            "flatRate":
+            {
+                "tempFlat":
+                {
+                    "basedOn": "string",
+                    "amount": 0,
+                    "flatExtraYear": 0
+                },
+                "permanent":
+                {
+                    "basedOn": "string",
+                    "amount": 0
+                }
+            },
+            "underwriting":
+            {
+                "underwritingType": "string",
+                "riskScore": 0,
+                "riskRating": "string"
+            },
+            "riskClass": "string",
+            "ropDbAmount": 0,
+            "ropDecision": "string",
+            "decisionComments": "string",
+            "impairment":
+            [
+                "string"
+            ],
+            "impairmentPrimary": "string",
+            "decisionCommentsAdd":
+            [
+                "string"
+            ],
+            "amountApplied": 0,
+            "amendments": "string",
+            "trueDecision":
+            {
+                "reason": "string",
+                "riskClass": "string",
+                "permFlatExtraBasedOn": "string",
+                "permFlatExtraAmount": 0,
+                "tempFlatExtraBasedOn": "string",
+                "tempFlatExtraAmount": 0,
+                "tempFlatExtraYear": 0
+            },
+            "decision": "string",
+            "examDate": "2020-08-10T17:30:00.000Z",
+            "complianceReviewCompleted": false,
+            "overRide": false,
+            "insurableInterest": false,
+            "decisionRiders":
+            [
+                {
+                    "riderName": "string",
+                    "riderAmount": 0,
+                    "riderPercentage": 0,
+                    "riderDecision": "string"
+                }
+            ],
+            "exclusionsDesc": "string",
+            "riskType": "string"
+        },
+        "brokers":
+        [
+            {
+                "ocdmId": "string",
+                "brokerCode": "string",
+                "brokerName": "string"
+            }
+        ],
+        "distributor":
+        {
+            "ocdmId": "string",
+            "name": "string",
+            "code": "string",
+            "splitPercentage": 0,
+            "innerCircle": false,
+            "priority": false,
+            "referralSource": "string"
+        },
+        "internalReplacement": "string",
+        "replacementPolicyNumber": "string",
+        "premiumTransactionType": "APPLY",
+        "premiumTransactionDate": "2020-08-10T17:30:00.000Z",
+        "premiumTransactionAmount": 0,
+        "qualificationTest": "string",
+        "backdated": false,
+        "qualityReview": "string",
+        "otherCarriersExpectedAmt": "string",
+        "frozenContent":
+        {
+            "correspondence":
+            [
+                {
+                    "type": "paymentReceipt",
+                    "referenceNum": "string",
+                    "reason": "string"
+                }
+            ],
+            "status": "freeze"
+        },
+        "freezeStatus": "string",
+        "freezeStatusReason": "string",
+        "collateralAssignees":
+        [
+            {
+                "rootOcdmID": "string",
+                "assigneeType": "string",
+                "assigneeEndDate": "2020-08-10T17:30:00.000Z",
+                "assigneeStartDate": "2020-08-10T17:30:00.000Z",
+                "status": "string",
+                "lastUpdateTime": "2020-08-10T17:30:00.000Z"
+            }
+        ],
+        "premiumSchedules":
+        [
+            {
+                "effectiveDate": "2020-08-10T17:30:00.000Z",
+                "annualPremium": 0,
+                "modalPremium": 0,
+                "lumpSumPremium": 0,
+                "updateDateTime": "2025-05-20T04:00:00.000Z",
+                "createdDateTime": "2025-05-20T04:00:00.000Z"
+            }
+        ],
+        "modifiedEndowmentContract": true,
+        "caseId": "string",
+        "wireReceivedDate": "2020-08-10T17:30:00.000Z",
+        "illustratorPin": "string",
+        "mailDate": "2020-08-10T17:30:00.000Z",
+        "premiumDetails":
+        {
+            "targetCommissionPremium": 0,
+            "minimumInitialPremium": 0,
+            "noLapseGuaranteePremium": 0,
+            "sevenPayPremium": 0
+        },
+        "lawsonProductCode": "string",
+        "earlyLapseProtectionPremium": 0,
+        "tableOfRates":
+        [
+            {
+                "rateType": "string",
+                "rates":
+                [
+                    0
+                ]
+            }
+        ],
+        "policySpecifications":
+        {
+            "advanceContributionChargeRate": 0,
+            "minimumWithdrawalAmount": 0,
+            "advanceContributionLimit": 0,
+            "deathBenefitDiscountFactor": 0,
+            "initialSurrenderCharge": 0,
+            "indexAppreciationAccount":
+            [
+                {
+                    "fundCode": "string",
+                    "fullName": "string",
+                    "minimumCapRate": 0,
+                    "floorRate": 0,
+                    "minimumParticipationRate": 0,
+                    "indexedPerformanceCharge": 0
+                }
+            ]
+        },
+        "premiumPaymentDetail":
+        {
+            "paymentOption": "SPECIFY_AMOUNT",
+            "premiumAmount": 0,
+            "paymentSchedule":
+            [
+                {
+                    "paymentOption": "SPECIFY_AMOUNT",
+                    "premiumAmount": 0,
+                    "fromAgeYear": "string",
+                    "toAgeYear": "string",
+                    "specifyMonth": 0
+                }
+            ],
+            "durationAgeYears": "string",
+            "paymentMode": "MONTHLY",
+            "lumpSumOption": "SPECIFY_AMOUNT",
+            "lumpSumAmount": 0,
+            "lumpSumSpecifyMonth": 0,
+            "lumpSumSchedule":
+            [
+                {
+                    "paymentOption": "SPECIFY_AMOUNT",
+                    "premiumAmount": 0,
+                    "fromAgeYear": "string",
+                    "toAgeYear": "string",
+                    "specifyMonth": 0
+                }
+            ]
+        },
+        "agreementStatusChangeDate": "2020-08-10T17:30:00.000Z",
+        "lapseTest" : {
+            "pvTestResult": "Failed",
+            "cvTestResult": "Failed",
+            "nlgTestResult": "Failed",
+            "reinstatementPremium": 0,
+            "defaultValue": 0,
+            "defaultDate": "2026-01-01T17:30:00.000Z",
+            "gracePeriodEndDate": "2026-01-01T17:30:00.000Z",
+            "lapseActionDate": "2025-04-13T04:00:00.000Z"
+        },
+        "corridorTest" : {
+            "inCorridor": false,
+            "lastCorridorTestChangeDate": "2026-01-01T17:30:00.000Z"
+        },
+        "productId": "string",
+        "manulifeAssessment":"string"
+    }
+}

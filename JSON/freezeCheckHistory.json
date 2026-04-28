@@ -1,0 +1,21 @@
+{
+    "freezeCheckHistory": {
+        "market": "string",
+        "policyNum": "string",
+        "primaryType": "Correspondence",
+        "type": "paymentReceipt",
+        "generationTime": "2025-05-20T04:00:00.000Z",
+        "documentId": "string",
+        "documentName": "string",
+        "documentLink": "string",
+        "referenceNum": "string",
+        "status": "string",
+        "id": "string",
+        "createdBy": "SYSTEM",
+        "createdTime": "2025-05-20T04:00:00.000Z",
+        "updatedBy": "SYSTEM",
+        "updatedTime": "2025-05-20T04:00:00.000Z",
+        "version": 0,
+        "documentState": 1
+    }
+}

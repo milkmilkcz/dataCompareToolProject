@@ -1,0 +1,57 @@
+{
+    "paymentDisbursement": {
+        "market": "string",
+        "disbursementCaseId": "string",
+        "originalCaseId": "string",
+        "requestType": "GHNW_CHECK_AND_SAVE",
+        "totalDisbursementAmount": 0,
+        "paymentDisbursementDetails": [
+            {
+                "disbursementMethod": "string",
+                "recipientName": "string",
+                "disbursementAmount": 0,
+                "financialAccount": "string",
+                "referenceNo": "string",
+                "replacementExchangePolicyNo": "string"
+            }
+        ],
+        "accountingDetail": [
+            {
+                "accountingType": "string",
+                "policyMonth": 0,
+                "fundAccountingRecord": [
+                    {
+                        "fundCode": "string",
+                        "value": 0
+                    }
+                ],
+                "totalValue": 0
+            }
+        ],
+        "currentVersion": 0,
+        "createdDate": "2020-08-10T17:30:00.000Z",
+        "updatedDate": "2020-08-10T17:30:00.000Z",
+        "id": "string",
+        "financeAccountId": "string",
+        "paymentMethod": "string",
+        "policyOwner": "string",
+        "payeeId": "string",
+        "payeeName": "string",
+        "amount": 0,
+        "transactionDate": "2025-05-20T04:00:00.000Z",
+        "referenceID": "string",
+        "disbursementReason": "string",
+        "currencyCode": "string",
+        "comments": "string",
+        "agreementNum": "string",
+        "dnrNum": "string",
+        "waveAccount": "string",
+        "countryCode": "string",
+        "event": "string",
+        "ownerFirstName": "string",
+        "ownerLastName": "string",
+        "transactionCode": "string",
+        "bankPartner": "string",
+        "documentState": 1
+    }
+}

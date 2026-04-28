@@ -1,0 +1,42 @@
+{
+  "policyFundAllocationInst": {
+    "market": "BMU",
+    "agreementNum": "string",
+    "allocationType": "PREMIUM_ALLOCATION_INST",
+    "allocationList": [
+      {
+        "effectiveDate": "2020-08-10T17:30:00.000Z",
+        "endDate": "2020-08-10T17:30:00.000Z",
+        "premiumType": "FLEXIBLE_PREMIUM_APPLY",
+        "numberOfTransfers": "string",
+        "referenceNum": "string",
+        "status": "ACTIVE",
+        "allocationItemList": [
+          {
+            "fundCode": "string",
+            "value": 0,
+            "unit": "string",
+            "inOut": "IN",
+            "currentAccountValue": 0,
+            "percentage": 0,
+			"fromAccount": "string",
+            "toAccount": [
+            	{
+            		"fundCode": "string",
+            		"value": "string",
+            		"unit": "string"
+            	}
+            ]
+          }
+        ]
+      }
+    ],
+    "id": "string",
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "version": 0,
+    "documentState": 1
+  }
+}

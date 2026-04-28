@@ -1,0 +1,149 @@
+{
+    "cashierPaymentHistory": {
+        "id": "string",
+        "market": "string",
+        "orderId": "string",
+        "paymentMethod": "string",
+        "bankPartner": "string",
+        "paymentRequestType": "string",
+        "paymentRequestCreationSource": "string",
+        "reconcileFlag": false,
+        "paymentCallbackRecordHistory": [
+            {
+                "paymentCallbackStatus": "string",
+                "thirdPartyTransactionId": "string",
+                "thirdPartyTradeNumber": "string",
+                "thirdPartyReferenceNumber": "string",
+                "callBackSource": "string",
+                "callbackTime": "2020-08-10T17:30:00.000Z"
+            }
+        ],
+        "paymentRequest": {
+            "orderId": "string",
+            "applicationItems": [
+                {
+                    "applicationNum": "string",
+                    "currency": "string",
+                    "planItemList": [
+                        {
+                            "planType": "string",
+                            "planCode": "string",
+                            "price": 0
+                        }
+                    ],
+                    "amount": 0,
+                    "verifier": "string",
+                    "paymentMethod": "string",
+                    "bankPartner": "string",
+                    "sourceOfPayment": "string",
+                    "sourcePolicyNum": "string",
+                    "receivedDate": "2020-08-10T17:30:00.000Z",
+                    "payerName": "string",
+                    "payerId": "string",
+                    "payerType": "string",
+                    "accountType": "string",
+                    "registrationType": "string",
+                    "emailAddress": "string",
+                    "mobileNumber": "string",
+                    "premiumType": "string",
+                    "refNo": "string",
+                    "verifierName": "string",
+                    "transactionCode": "string",
+                    "receiptNo": "string",
+                    "caseId": "string",
+                    "caseNo": "string",
+                    "receiptStatus": "string",
+                    "receiptDocumentId": "string",
+                    "receiptStatusInitialDate": "2020-08-10T17:30:00.000Z",
+                    "bankTransactionId": "string",
+                    "bankTradeNumber": "string",
+                    "bankAccountNo": "string",
+                    "preferredPayerChooseFlag": false,
+                    "payerOcdmId": "string",
+                    "discrepancyReason": "string",
+                    "address": "string",
+                    "completedDate": "2020-08-10T17:30:00.000Z"
+                }
+            ],
+            "currency": "string",
+            "amount": 0,
+            "firstInitial": false,
+            "caseId": "string",
+            "caseNo": "string"
+        },
+        "paymentRecordList": [
+            {
+            "orderId": "string",
+            "transactionId": "string",
+            "outboxStatus": "string",
+            "amount": 0,
+            "applicationItems": [
+                {
+                    "applicationNum": "string",
+                    "currency": "string",
+                    "planItemList": [
+                        {
+                            "planType": "string",
+                            "planCode": "string",
+                            "price": 0
+                        }
+                    ],
+                    "amount": 0,
+                    "verifier": "string",
+                    "paymentMethod": "string",
+                    "bankPartner": "string",
+                    "sourceOfPayment": "NEW_FUND",
+                    "sourcePolicyNum": "string",
+                    "receivedDate": "2020-08-10T17:30:00.000Z",
+                    "payerName": "string",
+                    "payerId": "string",
+                    "payerType": "string",
+                    "accountType": "string",
+                    "registrationType": "string",
+                    "emailAddress": "string",
+                    "mobileNumber": "string",
+                    "premiumType": "string",
+                    "refNo": "string",
+                    "verifierName": "string",
+                    "transactionCode": "string",
+                    "receiptNo": "string",
+                    "caseId": "string",
+                    "caseNo": "string",
+                    "receiptStatus": "string",
+                    "receiptDocumentId": "string",
+                    "receiptStatusInitialDate": "2020-08-10T17:30:00.000Z",
+                    "bankTransactionId": "string",
+                    "bankTradeNumber": "string",
+                    "bankAccountNo": "string",
+                    "preferredPayerChooseFlag": true,
+                    "payerOcdmId": "string",
+                    "discrepancyReason": "string",
+                    "address": "string",
+                    "completedDate": "2020-08-10T17:30:00.000Z"
+                }
+            ],
+            "createDate": "2020-08-10T17:30:00.000Z"
+        }
+        ],
+        "paymentRequestCreator": {
+            "ocdmId": "string",
+            "firstName": "string",
+            "fullName": "string",
+            "emailAddress": "string",
+            "identityNumberWithTypeList": {
+                "identityNumber": "string",
+                "identityType": "string"
+            },
+            "phoneNumberWhenCreatePaymentRequest": "string",
+            "payerType": "string"
+        },
+        "thirdPartyPaymentChannelRefNumber": {
+            "tradeNumber": "string"
+        },
+        "createDate": "2020-08-10T17:30:00.000Z",
+        "updateDate": "2020-08-10T17:30:00.000Z",
+        "caseStatus": "string",
+        "currentVersion": 0,
+        "documentState": 1
+    }
+}

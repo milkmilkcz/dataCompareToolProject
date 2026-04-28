@@ -1,0 +1,36 @@
+{
+  "fundLayerTrans": {
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "documentState": 1,
+    "id": "string",
+    "layerTrans": [
+      {
+        "fundId": "string",
+        "transDetails": [
+          {
+            "correlateId": "string",
+            "currencyCode": "string",
+            "lastInterestDate": "2020-08-10T17:30:00.000Z",
+            "layerId": "string",
+            "layerStatus": "string",
+            "layerType": "PREMIUM_APPLY"
+          }
+        ]
+      }
+    ],
+    "market": "string",
+    "month": 2,
+    "policyNum": "string",
+    "reason": "string",
+    "reversedFlag": false,
+    "segmentDate": "2020-08-10T17:30:00.000Z",
+    "transactionId": "string",
+    "transactionStatus": "string",
+    "transactionType": "string",
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "version": 0,
+    "year": 2
+  }
+}

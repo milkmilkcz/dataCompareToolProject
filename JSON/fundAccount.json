@@ -1,0 +1,171 @@
+{
+  "fundAccount": {
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "documentState": 1,
+    "id": "string",
+    "lastCallPe": "2020-08-10T17:30:00.000Z",
+    "market": "string",
+    "peTransactionSummary": {
+      "basePayload": "string",
+      "deficiencyInfo": {
+        "deficiencyLoanAmount": 1.34,
+        "deficiencyMonthlyDeduction": 1.34,
+        "deficiencyTotalAmount": 1.34
+      },
+      "fundRecord": [
+        {
+          "code": "string",
+          "currentFundPrice": 1.34,
+          "fundBalanceAllocation": 1.34,
+          "holdingFundBalance": 1.34,
+          "indexAccountList": [
+            {
+              "adjustSegmentCreditBalance": 1.34,
+              "fundBalance": 1.34,
+              "initSegmentAmount": 1.34,
+              "segmentInDate": "string",
+              "segmentInFundPrice": 1.34,
+              "segmentMaturePolicyMonth": 0
+            }
+          ],
+          "indexAccountRate": 1.34,
+          "indexRateMap": {
+            "capRate": 0.012,
+            "participationRate": 0.035,
+            "floor": 0.01
+          },
+          "initialAllocation": 1.34,
+          "premiumAllocation": 1.34,
+          "segmentInList": [
+            {
+              "holdingAccountRelatedId": "string",
+              "interest": 1.34,
+              "newPremium": 1.34,
+              "segmentInDate": "string",
+              "segmentPolicyMonth": 0,
+              "triggerDate": "string"
+            }
+          ],
+          "totalFundBalance": 1.34,
+          "backdateCharge": 0
+        }
+      ],
+      "loanInfo": {
+        "accLoanInterestCreditYearly": 1.34,
+        "accTotalLoanInterest": 1.34,
+        "indexLoanPrincipal": 1.34,
+        "loanAccountPrincipal": 1.34,
+        "loanAccountValue": 1.34,
+        "loanAlignPending": 1.34,
+        "loanCreditRate": 1.34,
+        "loanDetailsList": [
+          {
+            "accLoanCreditInterest": 1.34,
+            "accLoanInterest": 1.34,
+            "indexLoanPrincipal": 1.34,
+            "loanAccountValue": 1.34,
+            "loanCreditInterest": 1.34,
+            "loanCreditRate": 1.34,
+            "loanDebt": 1.34,
+            "loanInterest": 1.34,
+            "loanInterestCap": 1.34,
+            "loanInterestPeriod": {
+              "endDate": "string",
+              "startDate": "string"
+            },
+            "loanOriginalPrincipal": 1.34,
+            "loanPrincipal": 1.34,
+            "loanRate": 1.34,
+            "loanUniqueId": "string"
+          }
+        ],
+        "loanInterestCap": 1.34,
+        "loanInterestCredit": 1.34,
+        "loanRate": 1.34,
+        "totalLoanDebt": 1.34,
+        "totalLoanInterest": 1.34,
+        "totalLoanPrincipal": 1.34
+      },
+      "policyAmount": {
+        "baseFaceAmount": 1.34,
+        "deathBenefit": 1.34,
+        "initBaseFaceAmount": 1.34,
+        "initPolicyFaceAmount": 1.34,
+        "initRopAmount": 1.34,
+        "initSupplementFaceAmount": 1.34,
+        "initTotalFaceAmount": 1.34,
+        "minimumDeathBenefit": 1.34,
+        "naar": 1.34,
+        "netDeathBenefit": 1.34,
+        "policyFaceAmount": 1.34,
+        "ropAmount": 1.34,
+        "supplementFaceAmount": 1.34,
+        "totalFaceAmount": 1.34,
+        "inCorridor": false
+      },
+      "policyValue": 1.34,
+      "policyValueCGPV": 1.34,
+      "policyValueDBPV": 1.34
+    },
+    "policyNum": "string",
+    "policyPlanAccounts": [
+      {
+        "holdingAccountAmount": 1.34,
+        "planCode": "string",
+        "planName": "string",
+        "policyPlanAccountDetails": [
+          {
+            "allocateAccounts": [
+              {
+                "allocateAccountDetails": [
+                  {
+                    "allocateEffectiveDate": "2020-08-10T17:30:00.000Z",
+                    "allocatePercentage": 1.34,
+                    "allocationStatus": "string",
+                    "allocationType": "string",
+                    "currentFundPrice": 1.34,
+                    "fundCode": "string",
+                    "fundName": "string",
+                    "holdingAccountAmount": 1.34,
+                    "inactiveReason": "string",
+                    "lastTransactionDate": "2020-08-10T17:30:00.000Z",
+                    "lastTransactionId": "string",
+                    "totalAccountAmount": 1.34
+                  }
+                ],
+                "allocateAccountType": "FIXED_ACCOUNT",
+                "allocatePercentage": 1.34,
+                "holdingAccountAmount": 1.34,
+                "totalAccountAmount": 1.34
+              }
+            ],
+            "holdingAccountAmount": 1.34,
+            "policyAccountType": "NON_PAR",
+            "totalAccountAmount": 1.34
+          }
+        ],
+        "totalAccountAmount": 1.34
+      }
+    ],
+    "reversedFlag": false,
+    "trailResult": {
+      "accountValue": 1.123,
+      "shadowAccountValue": 1.123,
+      "adjustedSegmentCreditingBalance": 1.123,
+      "maximumWithdrawalAmount": 1.123,
+      "costBasis": 1.123,
+      "cashValueDefaultAmount": 1.123,
+      "noLapseGuaranteeDefaultAmount": 1.123,
+      "surrenderValue": 1.123,
+      "netSurrenderValue": 1.123,
+      "surrenderCharge": 1.123,
+      "marketValueAdjustment": 1.123,
+      "enhancedCashValueAmount": 1.123,
+      "loanDebt": 1.123
+    },
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "version": 0
+  }
+}

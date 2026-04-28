@@ -1,0 +1,77 @@
+{
+  "recurringBillingTransaction": {
+    "id": "string",
+    "agreementNum": "string",
+    "market": "string",
+    "integrationKey": "string",
+    "businessKey": "string",
+    "caseId": "string",
+    "orderId": "string",
+    "caseStatus": "string",
+    "caseReason": "string",
+    "paymentMethod": "string",
+    "bankPartner": "string",
+    "premiumAmount": 0,
+    "premiumDueDate": "2020-08-10T17:30:00.000Z",
+    "billingDate": "2020-08-10T17:30:00.000Z",
+    "firstReminderDate": "2020-08-10T17:30:00.000Z",
+    "secondReminderDate": "2020-08-10T17:30:00.000Z",
+    "gracePeriodEndDate": "2020-08-10T17:30:00.000Z",
+    "lapseDate": "2020-08-10T17:30:00.000Z",
+    "createDate": "2020-08-10T17:30:00.000Z",
+    "premiumReceived": "string",
+    "remainingPremiumAmount": "string",
+    "tolerance": 0,
+    "threshold": 0,
+    "billingSequence": 0,
+    "recurringBillingTransactionHistories": [
+      {
+        "id": "string",
+        "agreementNum": "string",
+        "market": "string",
+        "integrationKey": "string",
+        "businessKey": "string",
+        "caseId": "string",
+        "orderId": "string",
+        "caseStatus": "string",
+        "caseReason": "string",
+        "paymentMethod": "string",
+        "bankPartner": "string",
+        "premiumAmount": 0,
+        "premiumDueDate": "2020-08-10T17:30:00.000Z",
+        "billingDate": "2020-08-10T17:30:00.000Z",
+        "firstReminderDate": "2020-08-10T17:30:00.000Z",
+        "secondReminderDate": "2020-08-10T17:30:00.000Z",
+        "gracePeriodEndDate": "2020-08-10T17:30:00.000Z",
+        "lapseDate": "2020-08-10T17:30:00.000Z",
+        "createDate": "2020-08-10T17:30:00.000Z",
+        "premiumReceived": "string",
+        "remainingPremiumAmount": "string",
+        "tolerance": 0,
+        "threshold": 0,
+        "reason": "string"
+      }
+    ],
+    "paymentReminderHistory": [
+      "2020-08-10T17:30:00.000Z"
+    ],
+    "reason": "string",
+    "billingStrategy": "string",
+    "beforeUpdatePolicyStatus": "string",
+    "runWithPolicyStatus": "string",
+    "yearPeriod": 0,
+    "runningPlanDetails": [
+      {
+        "planType": "string",
+        "planCode": "string",
+        "originalStatus": "string",
+        "status": "string",
+        "activeStatus": "string",
+        "premiumAmount": 0,
+        "terminationDate": "2020-08-10T17:30:00.000Z"
+      }
+    ],
+    "version": 0,
+    "documentState": 1
+  }
+}

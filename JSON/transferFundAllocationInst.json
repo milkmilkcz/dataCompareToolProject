@@ -1,0 +1,38 @@
+{
+    "transferFundAllocationInst": {
+        "allocationInstType": "PREMIUM_ALLOCATION_INST",
+        "approvalDate": "2020-08-10T17:30:00.000Z",
+        "approvalSegmentInDate": "2020-08-10T17:30:00.000Z",
+        "basePlanCode": "string",
+        "correlateId": "string",
+        "createdBy": "SYSTEM",
+        "createdTime": "2020-08-10T17:30:00.000Z",
+        "currencyCode": "string",
+        "documentState": 1,
+        "id": "string",
+        "insuranceProductType": "TERM_LIFE",
+        "market": "string",
+        "policyChangeCaseId": "string",
+        "policyNum": "string",
+        "transferIn": [
+            {
+                "fundCode": "string",
+                "fundName": "string",
+                "transferAmount": 1.34,
+                "transferPercent": 1.34
+            }
+        ],
+        "transferOut": [
+            {
+                "fundCode": "string",
+                "fundName": "string",
+                "transferAmount": 1.34,
+                "transferPercent": 1.34
+            }
+        ],
+        "triggerDate": "2020-08-10T17:30:00.000Z",
+        "updatedBy": "SYSTEM",
+        "updatedTime": "2020-08-10T17:30:00.000Z",
+        "version": 0
+    }
+}

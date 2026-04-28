@@ -1,0 +1,504 @@
+{
+  "fundTransaction": {
+    "accountingDetail": [
+      {
+        "accountingType": "string",
+        "fundAccountingRecord": [
+          {
+            "fundCode": "string",
+            "value": 1.34
+          }
+        ],
+        "policyMonth": 2,
+        "totalValue": 1.34
+      }
+    ],
+    "approvalDate": "2020-08-10T17:30:00.000Z",
+    "approvalSegmentInDate": "2020-08-10T17:30:00.000Z",
+    "cashSurrenderValue": 1.34,
+    "cashierPaymentAmount": 1.34,
+    "cashierPaymentTransId": "string",
+    "coiCharge": {
+      "base": 1.34,
+      "totalCharge": 1.34
+    },
+    "correlateId": "string",
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "deleteAutoTransferCalendar": false,
+    "documentState": 1,
+    "effectiveDate": "2020-08-10T17:30:00.000Z",
+    "endDate": "2020-08-10T17:30:00.000Z",
+    "enhancedCashValueAmount": 1.34,
+    "eventDate": "2020-08-10T17:30:00.000Z",
+    "excessPremium": 1.34,
+    "extraRepayment": 1.34,
+    "fundLockReason": "CASE_LEVEL",
+    "fundTransactionReason": "INTEREST_CREDIT",
+    "fundTransactionStatus": "SUCCESS",
+    "fundTransactionType": "COMMON",
+    "hasPaidExcessPremium": false,
+    "id": "string",
+    "interestSegmentRates": [
+      {
+        "endDate": "2020-08-10T17:30:00.000Z",
+        "indexRateMap": {
+          "capRate": 0.012,
+          "participationRate": 0.035,
+          "floor": 0.01
+        },
+        "loanCreditRate": 1.34,
+        "loanSpreadCurrent": 1.34,
+        "market": "string",
+        "planCode": "string",
+        "rateMap": {
+          "capRate": 0.012,
+          "participationRate": 0.035,
+          "floor": 0.01
+        },
+        "startDate": "2020-08-10T17:30:00.000Z",
+        "variableLoanRate": 1.34
+      }
+    ],
+    "issueCharge": {
+      "bfaCharge": 1.34,
+      "issueCharge": 1.34,
+      "sfaCharge": 1.34
+    },
+    "issued": false,
+    "loanDebt": 1.34,
+    "loanRepaymentAmount": 1.34,
+    "loanRepaymentCaseId": "string",
+    "loanRepaymentType": "PARTIAL_REPAYMENT",
+    "loanRepaymentUniqueId": "string",
+    "loanSubtype": "STANDARD_LOAN",
+    "loanType": "APL",
+    "lockInPeriod": false,
+    "market": "string",
+    "marketValueAdjustment": 1.34,
+    "month": 2,
+    "monthlyCharge": 1.34,
+    "monthlyChargeCGPV": 1.34,
+    "monthlyChargeDBPV": 1.34,
+    "monthlyCoi": 1.34,
+    "monthlyFee": {
+      "accCharge": 1.34,
+      "bfaCharge": 1.34,
+      "ipcCharge": 1.34,
+      "sfaCharge": 1.34,
+      "totalCharge": 1.34,
+      "mecCharge": 1.34
+    },
+    "netSurrenderValue": 1.34,
+    "paymentCaseId": "string",
+    "peTransactionSummary": {
+      "basePayload": "string",
+      "deficiencyInfo": {
+        "deficiencyLoanAmount": 1.34,
+        "deficiencyMonthlyDeduction": 1.34,
+        "deficiencyTotalAmount": 1.34
+      },
+      "fundRecord": [
+        {
+          "code": "string",
+          "currentFundPrice": 1.34,
+          "fundBalanceAllocation": 1.34,
+          "holdingFundBalance": 1.34,
+          "indexAccountList": [
+            {
+              "adjustSegmentCreditBalance": 1.34,
+              "fundBalance": 1.34,
+              "initSegmentAmount": 1.34,
+              "segmentInDate": "string",
+              "segmentInFundPrice": 1.34,
+              "segmentMaturePolicyMonth": 0
+            }
+          ],
+          "indexAccountRate": 1.34,
+          "indexRateMap": {
+            "capRate": 0.012,
+            "participationRate": 0.035,
+            "floor": 0.01
+          },
+          "initialAllocation": 1.34,
+          "premiumAllocation": 1.34,
+          "segmentInList": [
+            {
+              "holdingAccountRelatedId": "string",
+              "interest": 1.34,
+              "newPremium": 1.34,
+              "segmentInDate": "string",
+              "segmentPolicyMonth": 0,
+              "triggerDate": "string"
+            }
+          ],
+          "totalFundBalance": 1.34,
+          "backdateCharge": 0
+        }
+      ],
+      "loanInfo": {
+        "accLoanInterestCreditYearly": 1.34,
+        "accTotalLoanInterest": 1.34,
+        "indexLoanPrincipal": 1.34,
+        "loanAccountPrincipal": 1.34,
+        "loanAccountValue": 1.34,
+        "loanAlignPending": 1.34,
+        "loanCreditRate": 1.34,
+        "loanDetailsList": [
+          {
+            "accLoanCreditInterest": 1.34,
+            "accLoanInterest": 1.34,
+            "indexLoanPrincipal": 1.34,
+            "loanAccountValue": 1.34,
+            "loanCreditInterest": 1.34,
+            "loanCreditRate": 1.34,
+            "loanDebt": 1.34,
+            "loanInterest": 1.34,
+            "loanInterestCap": 1.34,
+            "loanInterestPeriod": {
+              "endDate": "string",
+              "startDate": "string"
+            },
+            "loanOriginalPrincipal": 1.34,
+            "loanPrincipal": 1.34,
+            "loanRate": 1.34,
+            "loanUniqueId": "string"
+          }
+        ],
+        "loanInterestCap": 1.34,
+        "loanInterestCredit": 1.34,
+        "loanRate": 1.34,
+        "totalLoanDebt": 1.34,
+        "totalLoanInterest": 1.34,
+        "totalLoanPrincipal": 1.34
+      },
+      "policyAmount": {
+        "baseFaceAmount": 1.34,
+        "deathBenefit": 1.34,
+        "initBaseFaceAmount": 1.34,
+        "initPolicyFaceAmount": 1.34,
+        "initRopAmount": 1.34,
+        "initSupplementFaceAmount": 1.34,
+        "initTotalFaceAmount": 1.34,
+        "minimumDeathBenefit": 1.34,
+        "naar": 1.34,
+        "netDeathBenefit": 1.34,
+        "policyFaceAmount": 1.34,
+        "ropAmount": 1.34,
+        "supplementFaceAmount": 1.34,
+        "totalFaceAmount": 1.34
+      },
+      "policyValue": 1.34,
+      "policyValueCGPV": 1.34,
+      "policyValueDBPV": 1.34
+    },
+    "policyBalanceFrom": 1.34,
+    "policyBalanceTo": 1.34,
+    "policyChangeCaseId": "string",
+    "policyCurrency": "string",
+    "policyDebt": 1.34,
+    "policyMonth": 0,
+    "policyNum": "string",
+    "policyValue": 1.34,
+    "policyYear": 2,
+    "premiumAmount": 1.34,
+    "premiumApplyType": "APL_PREMIUM_APPLY",
+    "premiumCharge": 1.34,
+    "premiumPaidDate": "2020-08-10T17:30:00.000Z",
+    "quotationExpiryDate": "2020-08-10T17:30:00.000Z",
+    "quoteDate": "2020-08-10T17:30:00.000Z",
+    "reason": "string",
+    "refNo": "string",
+    "refundAmount": 1.34,
+    "remainingPaymentAmount": 1.34,
+    "reverseFromFundTrans": {
+      "correlateId": "string",
+      "fundTransactionReason": "INTEREST_CREDIT",
+      "fundTransactionType": "COMMON",
+      "peTransactionSummary": {
+        "deficiencyInfo": {
+          "deficiencyLoanAmount": 1.34,
+          "deficiencyMonthlyDeduction": 1.34,
+          "deficiencyTotalAmount": 1.34
+        },
+        "fundRecord": [
+          {
+            "code": "string",
+            "currentFundPrice": 1.34,
+            "fundBalanceAllocation": 1.34,
+            "holdingFundBalance": 1.34,
+            "indexAccountList": [
+              {
+                "adjustSegmentCreditBalance": 1.34,
+                "fundBalance": 1.34,
+                "initSegmentAmount": 1.34,
+                "segmentInDate": "string",
+                "segmentInFundPrice": 1.34,
+                "segmentMaturePolicyMonth": 0
+              }
+            ],
+            "indexAccountRate": 1.34,
+            "indexRateMap": {
+              "capRate": 0.012,
+              "participationRate": 0.035,
+              "floor": 0.01
+            },
+            "initialAllocation": 1.34,
+            "premiumAllocation": 1.34,
+            "segmentInList": [
+              {
+                "holdingAccountRelatedId": "string",
+                "interest": 1.34,
+                "newPremium": 1.34,
+                "segmentInDate": "string",
+                "segmentPolicyMonth": 0,
+                "triggerDate": "string"
+              }
+            ],
+            "totalFundBalance": 1.34,
+            "backdateCharge": 0
+          }
+        ],
+        "loanInfo": {
+          "accLoanInterestCreditYearly": 1.34,
+          "accTotalLoanInterest": 1.34,
+          "indexLoanPrincipal": 1.34,
+          "loanAccountPrincipal": 1.34,
+          "loanAccountValue": 1.34,
+          "loanAlignPending": 1.34,
+          "loanCreditRate": 1.34,
+          "loanDetailsList": [
+            {
+              "accLoanCreditInterest": 1.34,
+              "accLoanInterest": 1.34,
+              "indexLoanPrincipal": 1.34,
+              "loanAccountValue": 1.34,
+              "loanCreditInterest": 1.34,
+              "loanCreditRate": 1.34,
+              "loanDebt": 1.34,
+              "loanInterest": 1.34,
+              "loanInterestCap": 1.34,
+              "loanInterestPeriod": {
+                "endDate": "string",
+                "startDate": "string"
+              },
+              "loanOriginalPrincipal": 1.34,
+              "loanPrincipal": 1.34,
+              "loanRate": 1.34,
+              "loanUniqueId": "string"
+            }
+          ],
+          "loanInterestCap": 1.34,
+          "loanInterestCredit": 1.34,
+          "loanRate": 1.34,
+          "totalLoanDebt": 1.34,
+          "totalLoanInterest": 1.34,
+          "totalLoanPrincipal": 1.34
+        },
+        "policyAmount": {
+          "baseFaceAmount": 1.34,
+          "deathBenefit": 1.34,
+          "initBaseFaceAmount": 1.34,
+          "initPolicyFaceAmount": 1.34,
+          "initRopAmount": 1.34,
+          "initSupplementFaceAmount": 1.34,
+          "initTotalFaceAmount": 1.34,
+          "minimumDeathBenefit": 1.34,
+          "naar": 1.34,
+          "netDeathBenefit": 1.34,
+          "policyFaceAmount": 1.34,
+          "ropAmount": 1.34,
+          "supplementFaceAmount": 1.34,
+          "totalFaceAmount": 1.34
+        },
+        "policyValue": 1.34,
+        "policyValueCGPV": 1.34,
+        "policyValueDBPV": 1.34
+      },
+      "transactionId": "string"
+    },
+    "reverseToFundTrans": {
+      "correlateId": "string",
+      "fundTransactionReason": "INTEREST_CREDIT",
+      "fundTransactionType": "COMMON",
+      "peTransactionSummary": {
+        "deficiencyInfo": {
+          "deficiencyLoanAmount": 1.34,
+          "deficiencyMonthlyDeduction": 1.34,
+          "deficiencyTotalAmount": 1.34
+        },
+        "fundRecord": [
+          {
+            "code": "string",
+            "currentFundPrice": 1.34,
+            "fundBalanceAllocation": 1.34,
+            "holdingFundBalance": 1.34,
+            "indexAccountList": [
+              {
+                "adjustSegmentCreditBalance": 1.34,
+                "fundBalance": 1.34,
+                "initSegmentAmount": 1.34,
+                "segmentInDate": "string",
+                "segmentInFundPrice": 1.34,
+                "segmentMaturePolicyMonth": 0
+              }
+            ],
+            "indexAccountRate": 1.34,
+            "indexRateMap": {
+              "capRate": 0.012,
+              "participationRate": 0.035,
+              "floor": 0.01
+            },
+            "initialAllocation": 1.34,
+            "premiumAllocation": 1.34,
+            "segmentInList": [
+              {
+                "holdingAccountRelatedId": "string",
+                "interest": 1.34,
+                "newPremium": 1.34,
+                "segmentInDate": "string",
+                "segmentPolicyMonth": 0,
+                "triggerDate": "string"
+              }
+            ],
+            "totalFundBalance": 1.34,
+            "backdateCharge": 0
+          }
+        ],
+        "loanInfo": {
+          "accLoanInterestCreditYearly": 1.34,
+          "accTotalLoanInterest": 1.34,
+          "indexLoanPrincipal": 1.34,
+          "loanAccountPrincipal": 1.34,
+          "loanAccountValue": 1.34,
+          "loanAlignPending": 1.34,
+          "loanCreditRate": 1.34,
+          "loanDetailsList": [
+            {
+              "accLoanCreditInterest": 1.34,
+              "accLoanInterest": 1.34,
+              "indexLoanPrincipal": 1.34,
+              "loanAccountValue": 1.34,
+              "loanCreditInterest": 1.34,
+              "loanCreditRate": 1.34,
+              "loanDebt": 1.34,
+              "loanInterest": 1.34,
+              "loanInterestCap": 1.34,
+              "loanInterestPeriod": {
+                "endDate": "string",
+                "startDate": "string"
+              },
+              "loanOriginalPrincipal": 1.34,
+              "loanPrincipal": 1.34,
+              "loanRate": 1.34,
+              "loanUniqueId": "string"
+            }
+          ],
+          "loanInterestCap": 1.34,
+          "loanInterestCredit": 1.34,
+          "loanRate": 1.34,
+          "totalLoanDebt": 1.34,
+          "totalLoanInterest": 1.34,
+          "totalLoanPrincipal": 1.34
+        },
+        "policyAmount": {
+          "baseFaceAmount": 1.34,
+          "deathBenefit": 1.34,
+          "initBaseFaceAmount": 1.34,
+          "initPolicyFaceAmount": 1.34,
+          "initRopAmount": 1.34,
+          "initSupplementFaceAmount": 1.34,
+          "initTotalFaceAmount": 1.34,
+          "minimumDeathBenefit": 1.34,
+          "naar": 1.34,
+          "netDeathBenefit": 1.34,
+          "policyFaceAmount": 1.34,
+          "ropAmount": 1.34,
+          "supplementFaceAmount": 1.34,
+          "totalFaceAmount": 1.34
+        },
+        "policyValue": 1.34,
+        "policyValueCGPV": 1.34,
+        "policyValueDBPV": 1.34
+      },
+      "transactionId": "string"
+    },
+    "reverseTypeEnum": "WITHIN_FREE_LOOK",
+    "reversedFlag": false,
+    "segmentInDate": "2020-08-10T17:30:00.000Z",
+    "startDate": "2020-08-10T17:30:00.000Z",
+    "surrenderCharge": 1.34,
+    "surrenderValue": 1.34,
+    "suspenseAccountValue": 1.34,
+    "shadowAccountCredit": 1.34,
+    "totalInterest": 1.34,
+    "totalInterestCGPV": 1.34,
+    "totalInterestDBPV": 1.34,
+    "totalLoanBalance": 1.34,
+    "transactionDate": "2020-08-10T17:30:00.000Z",
+    "transactionId": "string",
+    "transferIn": [
+      {
+        "fundCode": "string",
+        "fundName": "string",
+        "transferAmount": 1.34,
+        "transferPercent": 1.34
+      }
+    ],
+    "transferOut": [
+      {
+        "fundCode": "string",
+        "fundName": "string",
+        "transferAmount": 1.34,
+        "transferPercent": 1.34
+      }
+    ],
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "upstreamTransactionId": "string",
+    "userId": "string",
+    "username": "string",
+    "valuationDate": "2020-08-10T17:30:00.000Z",
+    "version": 0,
+    "waivedAmount": 1.34,
+    "year": 2,
+    "fundRecord": [
+      {
+        "code": "string",
+        "initialAllocation": 0,
+        "premiumAllocation": 0,
+        "fundBalanceAllocation": 0,
+        "currentFundPrice": 0,
+        "indexAccountRate": 0,
+        "holdingFundBalance": 0,
+        "totalFundBalance": 0,
+        "backdateCharge": 0,
+        "indexRateMap": {
+          "capRate": 0.012,
+          "participationRate": 0.035,
+          "floor": 0.01
+        },
+        "indexAccountList": [
+          {
+            "segmentInDate": "string",
+            "segmentMaturePolicyMonth": 0,
+            "initSegmentAmount": 0,
+            "segmentInFundPrice": 0,
+            "fundBalance": 0,
+            "adjustSegmentCreditBalance": 0
+          }
+        ],
+        "segmentInList": [
+          {
+            "segmentInDate": "string",
+            "segmentPolicyMonth": 0,
+            "newPremium": 0,
+            "interest": 0,
+            "holdingAccountRelatedId": "string",
+            "triggerDate": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

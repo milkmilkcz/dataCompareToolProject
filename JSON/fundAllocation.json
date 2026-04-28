@@ -1,0 +1,117 @@
+{
+  "fundAllocation": {
+    "allocationItemList": [
+      {
+        "allocationEffectiveDate": "2020-08-10T17:30:00.000Z",
+        "allocationStatus": "string",
+        "allocationType": "PREMIUM_ALLOCATION",
+        "currency": "string",
+        "dealingBasis": "UNIT",
+        "dealingBasisResult": "UNIT",
+        "dealingNumber": 1.34,
+        "dealingNumberResult": 1.34,
+        "fundAccountType": "FIXED_ACCOUNT",
+        "fundCode": "string",
+        "fundName": "string"
+      }
+    ],
+    "allocationType": "PREMIUM_ALLOCATION",
+    "approvalDate": "2020-08-10T17:30:00.000Z",
+    "approvalSegmentInDate": "2020-08-10T17:30:00.000Z",
+    "bankAccountDetail": {
+      "bankAccountHolderName": "string",
+      "bankAccountNumber": "string",
+      "bankBranch": "string",
+      "bankName": "string"
+    },
+    "basePlanCode": "string",
+    "caseId": "string",
+    "cashierPaymentAmount": 1.34,
+    "cashierPaymentTransId": "string",
+    "correlateId": "string",
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "deleteAutoTransferCalendar": false,
+    "disbursementCase": {
+      "changeTo": "string",
+      "financeAccountId": "string",
+      "originalCaseId": "string",
+      "paymentMethod": "string",
+      "refundRecipientName": "string"
+    },
+    "documentState": 1,
+    "effectiveDate": "2020-08-10T17:30:00.000Z",
+    "fundLockReason": "CASE_LEVEL",
+    "fundTransactionType": "COMMON",
+    "id": "string",
+    "loanAmount": 1.34,
+    "loanCreditRate": 1.34,
+    "loanRate": 1.34,
+    "loanRepaymentCaseId": "string",
+    "loanRepaymentType": "PARTIAL_REPAYMENT",
+    "loanRepaymentUniqueId": "string",
+    "loanSubtype": "STANDARD_LOAN",
+    "loanType": "STANDARD_LOAN",
+    "loanUniqueId": "string",
+    "market": "string",
+    "needCallback": false,
+    "paymentReceived": 1.34,
+    "policyChangeCaseId": "string",
+    "policyCurrency": "string",
+    "policyNum": "string",
+    "productSubType": "TERM_LIFE",
+    "purchaseTypeEnum": "NORMAL",
+    "quotationExpiryDate": "2020-08-10T17:30:00.000Z",
+    "quoteDate": "2020-08-10T17:30:00.000Z",
+    "reason": "string",
+    "remainingPaymentAmount": 1.34,
+    "suspenseAccountValue": 1.34,
+    "terminationRequest": {
+      "agreementNum": "string",
+      "bankAccountId": "string",
+      "bankPartner": "string",
+      "caseId": "string",
+      "caseNum": "string",
+      "market": "string",
+      "operatorId": "string",
+      "operatorName": "string",
+      "refund": false,
+      "refundAccountNum": "string",
+      "refundMethod": "string",
+      "refundRecipientName": "string",
+      "requestTime": "2020-08-10T17:30:00.000Z",
+      "status": "string",
+      "terminationEffectiveDate": "2020-08-10T17:30:00.000Z",
+      "terminationReason": "string",
+      "terminationType": "string"
+    },
+    "totalLoanBalance": 1.34,
+    "transactionAmount": 1.34,
+    "transactionId": "string",
+    "transferIn": [
+      {
+        "fundCode": "string",
+        "fundName": "string",
+        "transferAmount": 1.34,
+        "transferPercent": 1.34
+      }
+    ],
+    "transferOut": [
+      {
+        "fundCode": "string",
+        "fundName": "string",
+        "transferAmount": 1.34,
+        "transferPercent": 1.34
+      }
+    ],
+    "triggerDate": "2020-08-10T17:30:00.000Z",
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "upstreamTransactionId": "string",
+    "userId": "string",
+    "username": "string",
+    "valuationDate": "2020-08-10T17:30:00.000Z",
+    "version": 0,
+    "waivedAmount": 1.34
+  }
+}

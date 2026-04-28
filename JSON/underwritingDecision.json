@@ -1,0 +1,190 @@
+{
+    "underwritingDecision": {
+        "id": "string",
+        "applicationNum": "string",
+        "market": "string",
+        "finalized": true,
+        "initial": true,
+        "aisCaseRequestId": "string",
+        "aisSubmissionDate": "2020-08-10T17:30:00.000Z",
+        "underwritingCaseId": "string",
+        "createDate": "2020-08-10T17:30:00.000Z",
+        "updateDate": "2020-08-10T17:30:00.000Z",
+        "creatorName": "string",
+        "updaterName": "string",
+        "decisionChangeReason": "UPDATE_LOADING_AND_DISCOUNT",
+        "businessSource": "string",
+        "effective": true,
+        "effectiveMarkupDate": "2020-08-10T17:30:00.000Z",
+        "reviseTerms": true,
+        "customerDefaultAccept": true,
+        "customerDefaultAcceptTime": "2020-08-10T17:30:00.000Z",
+        "policyYearWhenSubmit": 0,
+        "effectivePolicyYear": 0,
+        "softDeleted": true,
+        "softDeletedTime": "2020-08-10T17:30:00.000Z",
+        "softDeletedUserName": "string",
+        "softDeletedUserOcdmId": "string",
+        "backendSubmit": true,
+
+        "creatorOcdmId": "string",
+        "updaterOcdmId": "string",
+        "underwritingType": "FULL_UNDERWRITING",
+        "riskRating": "string",
+        "riskScore": 0,
+        "insuredUnderwritingDecisions": [
+            {
+                "insuredOcdmId": "string",
+                "source": "string",
+                "policyRoleWithinType": "PRIMARY",
+                "riskScore": 0,
+                "riskRating": "string",
+                "underwritingDecisionDetails": [
+                    {
+                        "riskType": "string",
+                        "decision": "string",
+                        "faceRateLoading": {
+                            "category": "string",
+                            "extraRate": 0
+                        },
+                        "flatRateLoading": {
+                            "category": "string",
+                            "flatRatePerMille": 0,
+                            "durationYear": 0
+                        },
+                        "exclusions": [
+                            {
+                                "code": "string",
+                                "text": "string"
+                            }
+                        ],
+                        "impairments": [
+                            {
+                                "impairment": "string",
+                                "impairmentPrimary": true
+                            }
+                        ],
+                        "permanentFlatRateLoading": {
+                            "category": "string",
+                            "flatRatePerMille": 0,
+                            "extraRate": 0
+                        },
+                        "mortality": 0
+                    }
+                ]
+            }
+        ],
+        "beneficiariesUnderwritingDecisions": [
+            {
+                "beneficiariesOcdmId": "string",
+                "source": "string",
+                "policyRoleWithinType": "PRIMARY",
+                "riskScore": 0,
+                "riskRating": "string"
+            }
+        ],
+        "ownersUnderwritingDecisions": [
+            {
+                "ownersOcdmId": "string",
+                "source": "string",
+                "policyRoleWithinType": "PRIMARY",
+                "riskScore": 0,
+                "riskRating": "string"
+            }
+        ],
+        "payorsUnderwritingDecisions": [
+            {
+                "payorsOcdmId": "string",
+                "source": "string",
+                "policyRoleWithinType": "PRIMARY",
+                "riskScore": 0,
+                "riskRating": "string"
+            }
+        ],
+        "benefitComponents": [
+            {
+                "status": "PENDING",
+                "benefitCode": "string",
+                "benefitType": "string",
+                "benefitAmount": 0,
+                "benefitPremium": {
+                    "modalType": "BI_ANNUAL",
+                    "amount": 0
+                },
+                "benefitDiscount": {
+                    "modalType": "BI_ANNUAL",
+                    "amount": 0
+                },
+                "minBenefitPeriod": 0,
+                "minPremiumPaidPeriod": 0,
+                "productId": "string",
+                "productMarketPlanName": "string",
+                "planPremiumDetail": {
+                    "modalPremium": 0,
+                    "discount": 0,
+                    "basicPremium": 0,
+                    "extraPremium": 0,
+                    "premiumWithLoading": 0,
+                    "discountedPremium": 0,
+                    "annualPremium": 0
+                },
+                "selectedModal": "BI_ANNUAL",
+                "currency": "string",
+                "discount": "string",
+                "riskTypeList": [
+                    "string"
+                ],
+                "premiumLoading": 0,
+                "flatLoading": 0,
+                "flatRateLoading": {
+                    "category": "string",
+                    "flatRatePerMille": 0,
+                    "durationYear": 0
+                },
+                "permanentFlatRateLoading": {
+                    "category": "string",
+                    "flatRatePerMille": 0,
+                    "extraRate": 0
+                }
+            }
+        ],
+        "amendments": "string",
+        "trueDecision": {
+            "reason": "string",
+            "riskClass": "string",
+            "permFlatExtraBasedOn": "string",
+            "permFlatExtraAmount": 0,
+            "tempFlatExtraBasedOn": "string",
+            "tempFlatExtraAmount": 0,
+            "tempFlatExtraYear": 0
+        },
+        "decision": "string",
+        "examDate": "2020-08-10T17:30:00.000Z",
+        "complianceReviewCompleted": true,
+        "overRide": true,
+        "insurableInterest": true,
+        "decisionRiders": [
+            {
+                "riderName": "string",
+                "riderAmount": 0,
+                "riderPercentage": 0,
+                "riderDecision": "string"
+            }
+        ],
+        "uwNotes": [
+            {
+                "title": "string",
+                "referenceCase": "string",
+                "publishedDate": "2025-05-20T04:00:00.000Z",
+                "createdBy": "string",
+                "content": [
+                    "string"
+                ],
+                "status": "string"
+            }
+        ],
+        "riskType": "string",
+        "version": 0,
+        "documentState": 1
+    }
+}

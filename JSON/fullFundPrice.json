@@ -1,0 +1,24 @@
+{
+  "fullFundPrice": {
+    "buyPrice": 1.34,
+    "createdBy": "SYSTEM",
+    "createdTime": "2020-08-10T17:30:00.000Z",
+    "currency": "string",
+    "documentState": 1,
+    "fromDate": "2020-08-10T17:30:00.000Z",
+    "id": "string",
+    "indexCode": "string",
+    "indexValue": 1.34,
+    "market": "string",
+    "sellPrice": 1.34,
+    "toDate": "2020-08-10T17:30:00.000Z",
+    "transactionDate": "2020-08-10T17:30:00.000Z",
+    "transactionSource": "I_FUND",
+    "transactionTime": "2020-08-10T17:30:00.000Z",
+    "transactionType": "INDEX_VALUE",
+    "updatedBy": "SYSTEM",
+    "updatedTime": "2020-08-10T17:30:00.000Z",
+    "valuationDate": "2020-08-10T17:30:00.000Z",
+    "version": 0
+  }
+}
