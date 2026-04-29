@@ -15,6 +15,15 @@ import logging
 import sys
 import os
 from datetime import datetime, timedelta
+import io
+
+# 确保 Windows 上的 UTF-8 编码
+if sys.platform == 'win32':
+    # 重新配置标准输出和错误输出为 UTF-8
+    if sys.stdout.encoding != 'utf-8':
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    if sys.stderr.encoding != 'utf-8':
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 # 添加项目根目录到 Python 路径，以便导入正常工作
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))

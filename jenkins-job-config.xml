@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow-definition plugin="workflow-job@1252.v7d4c5c50b_0cb_">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modelling.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2118.v8ce2d8f0ca_28"/>
+  </actions>
+  <description>数据对比验证工具 - 本地运行版 (不需要 Git)</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>ENVIRONMENT</name>
+          <description>选择数据库环境</description>
+          <choices>
+            <a class="java.util.Arrays$ArrayList" serialization="custom">
+              <int>2</int>
+              <int>10</int>
+              <java.lang.String>sit</java.lang.String>
+              <java.lang.String>qa</java.lang.String>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TIME_RANGE</name>
+          <description>验证时间范围</description>
+          <choices>
+            <a class="java.util.Arrays$ArrayList" serialization="custom">
+              <int>6</int>
+              <int>10</int>
+              <java.lang.String>today</java.lang.String>
+              <java.lang.String>this-week</java.lang.String>
+              <java.lang.String>this-month</java.lang.String>
+              <java.lang.String>last-7-days</java.lang.String>
+              <java.lang.String>last-30-days</java.lang.String>
+              <java.lang.String>custom</java.lang.String>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>START_DATE</name>
+          <description>开始日期 (YYYY-MM-DD)，仅当 TIME_RANGE=custom 时需要</description>
+          <defaultValue></defaultValue>
+          <trim>true</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>END_DATE</name>
+          <description>结束日期 (YYYY-MM-DD)，仅当 TIME_RANGE=custom 时需要</description>
+          <defaultValue></defaultValue>
+          <trim>true</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>EXPORT_REPORTS</name>
+          <description>是否导出验证报告</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>SKIP_TESTS</name>
+          <description>跳过数据库连接测试</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeepStr>-1</daysToKeepStr>
+        <numToKeepStr>30</numToKeepStr>
+        <artifactDaysToKeepStr>-1</artifactDaysToKeepStr>
+        <artifactNumToKeepStr>-1</artifactNumToKeepStr>
+      </strategy>
+    </hudson.model.BuildDiscarderProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers/>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.90">
+    <script>
+// Jenkinsfile - 数据对比验证工具 Pipeline (本地运行版)
+// 此 Pipeline 直接在本地 workspace 中运行，不需要 Git 检出
+
+pipeline {
+    agent any
+
+    // 环境变量
+    environment {
+        PYTHON_VERSION = '3.9'
+        VIRTUAL_ENV = "${WORKSPACE}\\venv"
+        PYTHONUNBUFFERED = '1'
+        PIP_CACHE_DIR = "${WORKSPACE}\\.pip-cache"
+    }
+
+    options {
+        // 最多保留 30 次构建
+        buildDiscarder(logRotator(numToKeepStr: '30'))
+        // 超时设置（30分钟）
+        timeout(time: 30, unit: 'MINUTES')
+        // 不允许并行构建
+        disableConcurrentBuilds()
+        // 在构建开始时打印时间戳
+        timestamps()
+    }
+
+    stages {
+        stage('环境检查') {
+            steps {
+                script {
+                    def buildTime = new Date(currentBuild.startTimeInMillis).format("yyyy-MM-dd HH:mm:ss")
+                    echo "========== 数据对比验证工具 Pipeline =========="
+                    echo "构建编号: ${BUILD_NUMBER}"
+                    echo "构建时间: ${buildTime}"
+                    echo "环境: ${params.ENVIRONMENT}"
+                    echo "时间范围: ${params.TIME_RANGE}"
+                    echo "工作目录: ${WORKSPACE}"
+                    echo "Python 版本: ${PYTHON_VERSION}"
+                    echo "=========================================="
+                }
+
+                // 验证本地文件是否存在
+                powershell '''
+                    Write-Host "检查项目文件..."
+                    $requiredFiles = @(
+                        "src\\data_validation_tool\\cli\\main.py",
+                        "config\\requirements.txt",
+                        "setup.py"
+                    )
+
+                    foreach ($file in $requiredFiles) {
+                        if (Test-Path $file) {
+                            Write-Host "✓ 找到: $file"
+                        } else {
+                            Write-Host "✗ 缺失: $file"
+                            exit 1
+                        }
+                    }
+                '''
+            }
+        }
+
+        stage('准备环境') {
+            steps {
+                powershell '''
+                    Write-Host "创建缓存目录..."
+                    if (!(Test-Path ".pip-cache")) {
+                        New-Item -ItemType Directory -Force -Path ".pip-cache" | Out-Null
+                    }
+
+                    Write-Host "检查虚拟环境..."
+                    if (!(Test-Path "venv")) {
+                        Write-Host "创建 Python 虚拟环境..."
+                        python -m venv venv
+                        if ($LASTEXITCODE -ne 0) {
+                            Write-Host "虚拟环境创建失败"
+                            exit 1
+                        }
+                    } else {
+                        Write-Host "虚拟环境已存在"
+                    }
+
+                    Write-Host "激活虚拟环境..."
+                    & "$PWD\\venv\\Scripts\\Activate.ps1"
+                    if ($LASTEXITCODE -ne 0) {
+                        Write-Host "虚拟环境激活失败"
+                        exit 1
+                    }
+
+                    pip install --upgrade pip setuptools
+                '''
+            }
+        }
+
+        stage('安装依赖') {
+            steps {
+                powershell '''
+                    & "$PWD\\venv\\Scripts\\Activate.ps1"
+                    Write-Host "安装项目依赖..."
+                    pip install --cache-dir .pip-cache -r config\\requirements.txt
+                    if ($LASTEXITCODE -ne 0) {
+                        Write-Host "依赖安装失败"
+                        exit 1
+                    }
+                '''
+            }
+        }
+
+        stage('测试连接') {
+            when {
+                expression {
+                    return !params.SKIP_TESTS
+                }
+            }
+            steps {
+                timeout(time: 5, unit: 'MINUTES') {
+                    powershell '''
+                        & "$PWD\\venv\\Scripts\\Activate.ps1"
+                        Write-Host "测试数据库连接..."
+
+                        python -c "
+import sys
+import os
+sys.path.insert(0, 'src')
+os.environ['ENVIRONMENT'] = 'sit'
+
+try:
+    from data_validation_tool.core.database import get_db_connection
+    conn = get_db_connection()
+    if conn.connect():
+        print('✓ 数据库连接成功')
+        conn.close()
+    else:
+        print('✗ 数据库连接失败')
+        sys.exit(1)
+except Exception as e:
+    print(f'✗ 连接测试异常: {e}')
+    import traceback
+    traceback.print_exc()
+    sys.exit(1)
+"
+                    '''
+                }
+            }
+        }
+
+        stage('执行验证') {
+            steps {
+                script {
+                    echo "执行数据对比验证..."
+
+                    powershell '''
+                        & "$PWD\\venv\\Scripts\\Activate.ps1"
+
+                        Write-Host "创建输出目录..."
+                        New-Item -ItemType Directory -Force -Path build\\reports, build\\logs | Out-Null
+
+                        Write-Host "执行数据验证..."
+                        $env:PYTHONPATH = "src"
+
+                        # 构建命令行参数
+                        $args = @()
+
+                        # 时间范围参数
+                        switch ("today") {
+                            "today" { $args += "--today" }
+                            "this-week" { $args += "--this-week" }
+                            "this-month" { $args += "--this-month" }
+                            "last-7-days" { $args += @("--last-days", "7") }
+                            "last-30-days" { $args += @("--last-days", "30") }
+                            "custom" {
+                                $args += @("--start", "2026-04-01", "--end", "2026-04-30")
+                            }
+                        }
+
+                        # 环境参数
+                        $args += @("--environment", "sit")
+
+                        # 导出参数
+                        $args += @("--export-all", "--output", "build\\reports")
+
+                        # 日志文件
+                        $args += @("--log-file", "build\\logs\\validation.log")
+
+                        Write-Host "命令参数: python src\\data_validation_tool\\cli\\main.py $($args -join ' ')"
+
+                        # 执行验证
+                        python src\\data_validation_tool\\cli\\main.py @args
+                        $exitCode = $LASTEXITCODE
+
+                        Write-Host "验证完成，退出码: $exitCode"
+                        if ($exitCode -ne 0) {
+                            exit $exitCode
+                        }
+                    '''
+                }
+            }
+        }
+
+        stage('生成报告') {
+            when {
+                expression {
+                    return params.EXPORT_REPORTS
+                }
+            }
+            steps {
+                script {
+                    echo "收集验证报告..."
+
+                    // 发布构���
+                    archiveArtifacts(
+                        artifacts: 'build/reports/**,build/logs/**',
+                        fingerprint: true,
+                        allowEmptyArchive: true
+                    )
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            script {
+                echo "========== 清理环境 =========="
+
+                // 收集日志
+                powershell '''
+                    if (Test-Path "build\\logs\\validation.log") {
+                        Write-Host "`n========== 验证日志摘要 =========="
+                        $logContent = Get-Content build\\logs\\validation.log -ErrorAction SilentlyContinue
+                        if ($logContent) {
+                            $logLines = @($logContent)
+                            if ($logLines.Count -gt 50) {
+                                Write-Host "... (显示最后 50 行) ..."
+                                $logLines[-50..-1] | ForEach-Object { Write-Host $_ }
+                            } else {
+                                Write-Host $logContent
+                            }
+                        }
+                    }
+                '''
+            }
+        }
+
+        success {
+            script {
+                def buildTime = new Date(currentBuild.startTimeInMillis).format("yyyy-MM-dd HH:mm:ss")
+                echo "=========================================="
+                echo "✓ 构建成功"
+                echo "构建编号: ${BUILD_NUMBER}"
+                echo "构建时间: ${buildTime}"
+                echo "报告位置: ${BUILD_URL}artifact/build/reports/"
+                echo "=========================================="
+            }
+        }
+
+        failure {
+            script {
+                def buildTime = new Date(currentBuild.startTimeInMillis).format("yyyy-MM-dd HH:mm:ss")
+                echo "=========================================="
+                echo "✗ 构建失败"
+                echo "构建编号: ${BUILD_NUMBER}"
+                echo "构建时间: ${buildTime}"
+                echo "请检查以下内容："
+                echo "- 构建日志: ${BUILD_URL}console"
+                echo "- 验证报告: ${BUILD_URL}artifact/build/reports/"
+                echo "- 验证日志: ${BUILD_URL}artifact/build/logs/"
+                echo "=========================================="
+            }
+        }
+    }
+}
+    </script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
+

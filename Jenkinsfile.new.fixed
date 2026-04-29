@@ -1,0 +1,433 @@
+// Jenkinsfile - Data Validation Tool Pipeline
+// Fixed version with English output and proper Groovy syntax
+
+pipeline {
+    agent any
+
+    environment {
+        VENV_DIR = "${WORKSPACE}\\venv"
+        PYTHON_VERSION = '3.9'
+    }
+
+    parameters {
+        choice(
+            name: 'ENVIRONMENT',
+            choices: ['sit', 'qa'],
+            description: 'Choose database environment'
+        )
+        choice(
+            name: 'TIME_RANGE',
+            choices: ['today', 'this-week', 'this-month', 'last-7-days', 'last-30-days', 'custom'],
+            description: 'Validation time range'
+        )
+        string(
+            name: 'START_DATE',
+            defaultValue: '',
+            description: 'Start date (YYYY-MM-DD), required when TIME_RANGE=custom'
+        )
+        string(
+            name: 'END_DATE',
+            defaultValue: '',
+            description: 'End date (YYYY-MM-DD), required when TIME_RANGE=custom'
+        )
+        booleanParam(
+            name: 'EXPORT_REPORTS',
+            defaultValue: true,
+            description: 'Export validation reports'
+        )
+        booleanParam(
+            name: 'SKIP_TESTS',
+            defaultValue: false,
+            description: 'Skip database connection test'
+        )
+    }
+
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '20'))
+        timeout(time: 60, unit: 'MINUTES')
+        disableConcurrentBuilds()
+        timestamps()
+    }
+
+    stages {
+        stage('Initialize') {
+            steps {
+                script {
+                    echo "========== Pipeline Initialization =========="
+                    def buildTime = new Date(currentBuild.startTimeInMillis).format("yyyy-MM-dd HH:mm:ss")
+                    echo "Build Number: ${BUILD_NUMBER}"
+                    echo "Build Time: ${buildTime}"
+                    echo "Workspace: ${WORKSPACE}"
+                    echo "Environment: ${params.ENVIRONMENT}"
+                    echo "Time Range: ${params.TIME_RANGE}"
+                    echo "=========================================="
+                }
+
+                powershell '''
+                    Write-Host ""
+                    Write-Host "Checking project files..."
+                    $requiredFiles = @(
+                        "src\\data_validation_tool\\cli\\main.py",
+                        "config\\requirements.txt",
+                        "setup.py"
+                    )
+
+                    foreach ($file in $requiredFiles) {
+                        if (Test-Path $file) {
+                            Write-Host "  [OK] $file"
+                        } else {
+                            Write-Host "  [ERROR] Missing: $file"
+                            exit 1
+                        }
+                    }
+                '''
+            }
+        }
+
+        stage('Setup Virtual Environment') {
+            steps {
+                powershell '''
+                    Write-Host ""
+                    Write-Host "========== Creating Virtual Environment =========="
+
+                    # Cleanup old venv if exists
+                    if (Test-Path "venv") {
+                        Write-Host "Cleaning up old virtual environment..."
+                        Remove-Item -Recurse -Force "venv" -ErrorAction SilentlyContinue
+                    }
+
+                    Write-Host "Finding Python installation..."
+
+                    # Try multiple Python paths
+                    $pythonPaths = @(
+                        "C:\\Users\\chenleo\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                        "C:\\Users\\chenleo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+                        "C:\\Python313\\python.exe",
+                        "C:\\Python311\\python.exe"
+                    )
+
+                    $pythonPath = ""
+                    foreach ($path in $pythonPaths) {
+                        if (Test-Path $path) {
+                            $pythonPath = $path
+                            Write-Host "  Found Python at: $path"
+                            break
+                        }
+                    }
+
+                    # Try command line search if not found
+                    if (!$pythonPath) {
+                        try {
+                            $pythonCmd = Get-Command python -ErrorAction SilentlyContinue
+                            if ($pythonCmd) {
+                                $pythonPath = $pythonCmd.Source
+                                Write-Host "  Found Python in PATH: $pythonPath"
+                            }
+                        } catch {
+                            Write-Host "[INFO] Python not found in PATH"
+                        }
+                    }
+
+                    if (!$pythonPath) {
+                        Write-Host "[ERROR] Could not locate Python executable"
+                        exit 1
+                    }
+
+                    Write-Host "Creating virtual environment..."
+                    & $pythonPath -m venv venv 2>&1
+
+                    if ($LASTEXITCODE -eq 0) {
+                        Write-Host "[OK] Virtual environment created successfully"
+                    } else {
+                        Write-Host "[ERROR] Virtual environment creation failed"
+                        exit 1
+                    }
+
+                    # Verify venv Python executable
+                    $venvPython = "venv\\Scripts\\python.exe"
+                    if (!(Test-Path $venvPython)) {
+                        Write-Host "[ERROR] Virtual environment Python not found"
+                        exit 1
+                    }
+
+                    & $venvPython --version
+                    Write-Host "[OK] Virtual environment verified"
+                '''
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                powershell '''
+                    Write-Host ""
+                    Write-Host "========== Installing Dependencies =========="
+
+                    $venvPython = "venv\\Scripts\\python.exe"
+
+                    Write-Host "Upgrading pip and setuptools..."
+                    & $venvPython -m pip install --upgrade pip setuptools 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        Write-Host "[WARNING] Pip upgrade had issues, continuing..."
+                    }
+
+                    Write-Host ""
+                    Write-Host "Installing project dependencies..."
+                    & $venvPython -m pip install -r config\\requirements.txt 2>&1
+
+                    if ($LASTEXITCODE -eq 0) {
+                        Write-Host "[OK] Dependencies installed successfully"
+                    } else {
+                        Write-Host "[ERROR] Dependency installation failed"
+                        exit 1
+                    }
+                '''
+            }
+        }
+
+        stage('Test Database Connection') {
+            when {
+                expression {
+                    return !params.SKIP_TESTS
+                }
+            }
+            steps {
+                powershell '''
+                    Write-Host ""
+                    Write-Host "========== Testing Database Connection =========="
+
+                    $venvPython = "venv\\Scripts\\python.exe"
+
+                    if (!(Test-Path $venvPython)) {
+                        Write-Host "[ERROR] Virtual environment Python not found"
+                        exit 1
+                    }
+
+                    $env:PYTHONIOENCODING = "utf-8"
+
+                    & $venvPython -c "
+import sys
+import os
+
+if sys.platform == 'win32':
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
+sys.path.insert(0, 'src')
+env = '${ENVIRONMENT}'
+os.environ['ENVIRONMENT'] = env
+
+try:
+    from data_validation_tool.core.database import get_db_connection
+    print(f'[INFO] Connecting to database ({env})...')
+    conn = get_db_connection()
+    if conn.connect():
+        print('[SUCCESS] Database connection successful')
+        conn.close()
+        sys.exit(0)
+    else:
+        print('[ERROR] Database connection failed')
+        sys.exit(1)
+except Exception as e:
+    print(f'[ERROR] Connection exception: {type(e).__name__}: {str(e)}')
+    sys.exit(1)
+" 2>&1
+
+                    if ($LASTEXITCODE -ne 0) {
+                        Write-Host "[WARNING] Connection test failed, but pipeline will continue"
+                    } else {
+                        Write-Host "[OK] Connection test passed"
+                    }
+                '''
+            }
+        }
+
+        stage('Execute Validation') {
+            steps {
+                script {
+                    env.JENKINS_ENVIRONMENT = params.ENVIRONMENT
+                    env.JENKINS_TIME_RANGE = params.TIME_RANGE
+                    env.JENKINS_START_DATE = params.START_DATE
+                    env.JENKINS_END_DATE = params.END_DATE
+                    env.JENKINS_EXPORT_REPORTS = params.EXPORT_REPORTS.toString()
+                }
+                powershell '''
+                    Write-Host ""
+                    Write-Host "========== Executing Data Validation =========="
+
+                    $venvPython = "venv\\Scripts\\python.exe"
+                    $env:PYTHONIOENCODING = "utf-8"
+
+                    # Create output directories
+                    New-Item -ItemType Directory -Force -Path "build\\reports", "build\\logs" -ErrorAction SilentlyContinue | Out-Null
+
+                    Write-Host ""
+                    Write-Host "Building validation command..."
+
+                    $environment = $env:JENKINS_ENVIRONMENT
+                    $timeRange = $env:JENKINS_TIME_RANGE
+                    $startDate = $env:JENKINS_START_DATE
+                    $endDate = $env:JENKINS_END_DATE
+                    $exportReports = $env:JENKINS_EXPORT_REPORTS
+
+                    Write-Host "  Environment: $environment"
+                    Write-Host "  Time Range: $timeRange"
+
+                    if ($timeRange -eq "custom") {
+                        Write-Host "  Custom Range: $startDate to $endDate"
+                    }
+
+                    if ($exportReports -eq "true" -or $exportReports -eq "True") {
+                        Write-Host "  Export Reports: Yes"
+                    }
+
+                    Write-Host ""
+                    Write-Host "Executing validation tool..."
+
+                    # Set environment variable for database connection
+                    $env:ENVIRONMENT = $environment
+
+                    # Build command arguments based on time range
+                    $cmdArgs = @(
+                        "src/data_validation_tool/cli/jenkins_cli.py",
+                        "--output", "build/reports",
+                        "--log-file", "build/logs/validation.log"
+                    )
+
+                    # Map time range to jenkins_cli arguments
+                    switch ($timeRange) {
+                        "today" {
+                            $cmdArgs += @("--today")
+                        }
+                        "this-week" {
+                            $cmdArgs += @("--this-week")
+                        }
+                        "this-month" {·
+                            $cmdArgs += @("--this-month")
+                        }
+                        "last-7-days" {
+                            $cmdArgs += @("--last-days", "7")
+                        }
+                        "last-30-days" {
+                            $cmdArgs += @("--last-days", "30")
+                        }
+                        "custom" {
+                            if ($startDate -and $endDate) {
+                                $cmdArgs += @("--start", $startDate, "--end", $endDate)
+                            } else {
+                                Write-Host "[ERROR] Custom time range requires START_DATE and END_DATE"
+                                exit 1
+                            }
+                        }
+                        default {
+                            Write-Host "[ERROR] Unknown time range: $timeRange"
+                            exit 1
+                        }
+                    }
+
+                    # Add export options
+                    if ($exportReports -eq "true" -or $exportReports -eq "True") {
+                        $cmdArgs += @("--export-json", "--export-csv", "--export-junit")
+                    }
+
+                    & $venvPython @cmdArgs 2>&1
+
+                    $exitCode = $LASTEXITCODE
+                    Write-Host ""
+                    Write-Host "Validation completed (exit code: $exitCode)"
+
+                    if ($exitCode -ne 0 -and $exitCode -ne 1) {
+                        Write-Host "[ERROR] Validation tool execution failed"
+                        exit 1
+                    }
+                '''
+            }
+        }
+
+        stage('Collect Reports') {
+            when {
+                expression { return params.EXPORT_REPORTS }
+            }
+            steps {
+                powershell '''
+                    Write-Host ""
+                    Write-Host "========== Collecting Reports =========="
+
+                    if (Test-Path "build\\reports") {
+                        Write-Host "Report files:"
+                        Get-ChildItem "build\\reports" -Recurse | ForEach-Object {
+                            Write-Host "  [OK] $($_.FullName)"
+                        }
+                    } else {
+                        Write-Host "[INFO] No reports directory found"
+                    }
+                '''
+
+                archiveArtifacts(
+                    artifacts: 'build/reports/**,build/logs/**',
+                    fingerprint: true,
+                    allowEmptyArchive: true
+                )
+            }
+        }
+    }
+
+    post {
+        always {
+            script {
+                echo ""
+                echo "========== Build Completed =========="
+            }
+
+            powershell '''
+                if (Test-Path "build\\logs\\validation.log") {
+                    Write-Host ""
+                    Write-Host "========== Validation Log Summary =========="
+                    $logContent = Get-Content "build\\logs\\validation.log" -ErrorAction SilentlyContinue
+                    if ($logContent) {
+                        $logLines = @($logContent)
+                        if ($logLines.Count -gt 50) {
+                            Write-Host "... (showing last 50 lines) ..."
+                            $logLines[-50..-1] | ForEach-Object { Write-Host $_ }
+                        } else {
+                            $logLines | ForEach-Object { Write-Host $_ }
+                        }
+                    }
+                }
+            '''
+        }
+
+        success {
+            script {
+                def buildTime = new Date(currentBuild.startTimeInMillis).format("yyyy-MM-dd HH:mm:ss")
+                echo "=========================================="
+                echo "[SUCCESS] Build completed successfully"
+                echo "Build Number: ${BUILD_NUMBER}"
+                echo "Build Time: ${buildTime}"
+                if (params.EXPORT_REPORTS) {
+                    echo "Reports: ${BUILD_URL}artifact/build/reports/"
+                }
+                echo "=========================================="
+            }
+        }
+
+        failure {
+            script {
+                def buildTime = new Date(currentBuild.startTimeInMillis).format("yyyy-MM-dd HH:mm:ss")
+                echo "=========================================="
+                echo "[ERROR] Build failed"
+                echo "Build Number: ${BUILD_NUMBER}"
+                echo "Build Time: ${buildTime}"
+                echo "Console: ${BUILD_URL}console"
+                echo "=========================================="
+            }
+        }
+
+        unstable {
+            script {
+                echo "[WARNING] Build is unstable, validation errors detected"
+            }
+        }
+    }
+}
+
